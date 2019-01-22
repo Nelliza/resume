@@ -1,0 +1,128 @@
+@import url("fonts.css");
+
+.page {
+  font-family: "Pt_sans", "Open Sans", sans-serif;
+  font-size: .81rem;
+  display: flex;
+  box-sizing: border-box;
+  width: 1060.8px;
+  padding: 2.3rem 1.44rem;
+}
+.page__left-column {
+  width: 36.48%;
+  padding-right: 1.44rem;
+  padding-left: 1.44rem;
+}
+.page__right-column {
+  padding-right: 1.44rem;
+  padding-left: 1.44rem;
+
+  flex: 1;
+}
+.page__item {
+  margin-top: 2rem;
+}
+.subtitle {
+  font-size: 2rem;
+  line-height: 2.35;
+  display: flex;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: .16rem;
+  text-transform: uppercase;
+  color: #3d6cb0;
+
+  align-items: center;
+}
+.subtitle::before {
+  width: 3.9rem;
+  height: 3.9rem;
+  margin-top: -.4rem;
+  margin-right: .7rem;
+  content: '';
+}
+.subtitle::after {
+  width: 3.13rem;
+  height: .25rem;
+  margin-top: -.4rem;
+  margin-right: .7rem;
+  margin-left: .3rem;
+  content: '';
+  background-color: #3c6bb0;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.subtitle--profile {
+  padding-top: 1.75rem;
+}
+.subtitle--profile::before {
+  background: url("../img/profile-icon.png") no-repeat center;
+}
+.subtitle--contact::before {
+  background: url("../img/contact-icon.png") no-repeat center;
+}
+.subtitle--skills::before {
+  background: url("../img/skills-icon.png") no-repeat center;
+}
+.subtitle--education::before {
+  background: url("../img/education-icon.png") no-repeat center;
+}
+.subtitle--experience::before {
+  background: url("../img/experience-icon.png") no-repeat center;
+}
+.subtitle--software::before {
+  background: url("../img/software-icon.png") no-repeat center;
+}
+.introduce {
+  text-align: center;
+}
+.introduce__photo {
+  width: 11.13rem;
+  height: 11.13rem;
+  margin: 0 auto;
+  padding: .69rem;
+  border: .89px solid #3d6cb0;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  background-clip: content-box;
+}
+.introduce__name {
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.introduce__surname {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.introduce__profession {
+  font-size: 1.31rem;
+  font-weight: bold;
+  margin-top: .3rem;
+  text-transform: uppercase;
+}
+.profile__text {
+  margin-top: .1rem;
+  margin-right: .6rem;
+}
+.profile__text--bold {
+  letter-spacing: .031rem;
+}
+.contact__list {
+  font-size: 1.1rem;
+  border-spacing: 0 1.45rem;
+}
+.contact__description {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3d6cb0;
+  width: 39%;
+}
