@@ -1,0 +1,10 @@
+include ../page/mixins
+
+section.page__item.contact
+  +subtitle('contact')
+
+  table.contact__list
+    +contactList("Address", "Main Street, City.")
+    +contactList("E-mail", "contact@domain.com")
+    +contactList("Phone", "555-555-555")
+    +contactList("Website", "www.yourweb.com")

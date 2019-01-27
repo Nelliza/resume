@@ -1,0 +1,37 @@
+- var educationDegree = "Master degree"
+- var educationPlace = "University name"
+- var experienceDegree = "Company name"
+- var experiencePlace = "Your job here"
+
+mixin subtitle(name)
+  h2(class="subtitle subtitle--" + name)= name
+
+mixin contactList(description, value)
+  tr
+    td.contact__description= description
+    td.contact__value= value
+
+mixin skillsItem(name, countDot, countDotGray)
+  .skills__item
+    h3.skills__name= name
+    ul.skills__level
+      - for (var x = 0; x < countDot; x++)
+        li.skills__level-item
+          span.skills__dot
+      - for (var x = 0; x < countDotGray; x++)
+        li.skills__level-item
+          span.skills__dot.skills__dot--gray
+
+mixin summaryItem(degree, place)
+  li.summary-items__item
+    .summary-items__header
+      span.summary-items__degree= degree
+      span.summary-items__period // Feb 2011 - Jun 2014
+    span.summary-items__place= place
+    p.summary-items__description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+mixin softwareItem(name, width)
+  .software__item
+    h3.software__name= name
+    .software__level
+      span(style="width: " + width + "%")
