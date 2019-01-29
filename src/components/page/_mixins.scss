@@ -1,0 +1,60 @@
+@mixin font-face($type) {
+  $name: $type;
+  $weight: 400;
+  $style: normal;
+
+  @if $type == normal {
+    $name: regular;
+  }
+  @else if $type == bold {
+    $weight: 700;
+  }
+  @else if $type == italic {
+    $style: italic;
+  }
+
+  @font-face {
+    font-family: "Pt_sans";
+    src: url("../fonts/pt_sans-web-#{$name}-webfont.woff2") format("woff2"),
+         url("../fonts/pt_sans-web-#{$name}-webfont.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin subtitle-icon-bg($name) {
+  background: url("../img/#{$name}-icon.png") no-repeat;
+  background-size: contain;
+}
+
+@mixin subtitle-icon($name, $margin-right: 0) {
+  .subtitle--#{$name}::before {
+    @if $margin-right != 0 {
+      margin-right: $margin-right;
+    }
+    @include subtitle-icon-bg($name);
+  }
+}
+
+@mixin gradient-bg($deg, $color-stops...) {
+  background-image: linear-gradient($deg, $color-stops);
+}
+
+@mixin linear-gradient($color, $percent, $deg: 135deg) {
+  $color-stops: $color $percent, transparent $percent, transparent $percent*2, $color $percent*2, $color $percent*3, transparent $percent*3, transparent;
+
+  @include gradient-bg($deg, $color-stops);
+}
+
+@mixin animation($browser) {
+  -#{$browser}-animation: animate-stripes 3s linear infinite;
+}
+
+@mixin animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80px 0;
+  }
+}

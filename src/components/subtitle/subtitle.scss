@@ -1,0 +1,45 @@
+.subtitle {
+  font-size: 2rem;
+  line-height: 2.05;
+  display: flex;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: $color-main;
+
+  align-items: center;
+}
+.subtitle::before {
+  width: 4.05rem;
+  height: 4.05rem;
+  margin-right: .5rem;
+  content: "";
+}
+.subtitle::after {
+  width: 3.13rem;
+  height: .25rem;
+  margin-top: -.4rem;
+  margin-right: .7rem;
+  margin-left: .3rem;
+  content: "";
+  background-color: #3c6bb0;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.subtitle--profile {
+  padding-top: 1.75rem;
+}
+
+@include subtitle-icon(profile);
+
+@include subtitle-icon(contact);
+
+@include subtitle-icon(skills);
+
+@include subtitle-icon(education, 1.1rem);
+
+@include subtitle-icon(experience, 1.1rem);
+
+@include subtitle-icon(software, 1.1rem);

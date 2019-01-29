@@ -1,0 +1,36 @@
+.software-flex {
+  display: flex;
+  height: 14.5rem;
+  margin-right: .8rem;
+  margin-left: .5rem;
+
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.software__item {
+  width: 44.5%;
+}
+.software__name {
+  font-size: 1.3rem;
+  margin-top: 1.35rem;
+  margin-bottom: .5rem;
+  letter-spacing: .021rem;
+  text-transform: uppercase;
+}
+.software__level {
+  height: 1.2rem;
+  background-color: $color-dots;
+}
+.software__level {
+  span {
+    display: inline-block;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    @include animation(webkit);
+    @include animation(moz);
+    background-color: $color-main;
+    @include linear-gradient($color-gradient, 25%);
+    background-size: 40px 40px;
+  }
+}

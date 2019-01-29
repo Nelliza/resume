@@ -1,3 +1,6 @@
+include ./components/page/config
+include ./components/page/mixins
+
 doctype html
 html(lang="en")
   head
@@ -5,4 +8,4 @@ html(lang="en")
     title My rezume
     link(rel="stylesheet", href="css/style.css")
   body.page
-    include src/components/page/page
+    include ./components/page/page

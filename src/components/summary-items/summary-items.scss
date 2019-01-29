@@ -1,0 +1,43 @@
+.summary-items {
+  margin-top: 1.3rem;
+  margin-bottom: 2.85rem;
+  padding-left: 3rem;
+  list-style: none;
+}
+.summary-items__item {
+  position: relative;
+}
+.summary-items__item::before {
+  position: absolute;
+  top: .2rem;
+  left: -2.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  border-radius: 50%;
+  background-color: #000;
+}
+.summary-items__header {
+  font-size: 1.3rem;
+}
+.summary-items__degree {
+  font-weight: bold;
+  margin-right: .8rem;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  color: $color-main;
+}
+.summary-items__period {
+  @media screen and (max-width: 886px) and (min-width: 842px) {
+    font-size: 1.1rem;
+  }
+}
+.summary-items__place {
+  font-size: 1.3rem;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+.summary-items__description {
+  margin-top: 0;
+  margin-bottom: .75rem;
+}

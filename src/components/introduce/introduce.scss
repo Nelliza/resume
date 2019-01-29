@@ -1,0 +1,36 @@
+.introduce {
+  text-align: center;
+}
+.introduce__photo {
+  width: 11.13rem;
+  height: 11.13rem;
+  margin: 3rem auto 0 auto;
+  padding: .69rem;
+  border: .89px solid $color-main;
+  border-radius: 50%;
+  background-color: $color-main;
+  background-clip: content-box;
+}
+.introduce__name {
+  font-size: 2.88rem;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.introduce__surname {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: .35rem;
+  text-transform: uppercase;
+}
+.introduce__profession {
+  font-size: 1.31rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: .5rem;
+  text-transform: uppercase;
+}
