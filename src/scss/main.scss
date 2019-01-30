@@ -1,0 +1,21 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+@import "../components/page/page";
+@import "../components/subtitle/subtitle";
+@import "../components/summary-items/summary-items";
+@import "../components/introduce/introduce";
+@import "../components/profile/profile";
+@import "../components/contact/contact";
+@import "../components/skills/skills";
+@import "../components/experience/experience";
+@import "../components/software/software";
+
+@-webkit-keyframes animate-stripes {
+  @include animate-stripes;
+}
+
+@-moz-keyframes animate-stripes {
+  @include animate-stripes;
+}
