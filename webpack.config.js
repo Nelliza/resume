@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -7,8 +8,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist'
+    path: path.resolve(__dirname, './dist')
   },
   module: {
     rules: [
@@ -50,6 +50,11 @@ module.exports = {
             options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
           }
         ]
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        options: { pretty: true }
       }
     ]
   },
@@ -59,6 +64,12 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/index.pug',
+      filename: 'index.html'
     })
   ]
 }

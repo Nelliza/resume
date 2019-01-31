@@ -1,5 +1,5 @@
-include src/components/page/vars
-include src/components/page/mixins
+include ./components/page/vars
+include ./components/page/mixins
 
 doctype html
 html(lang="en")
@@ -8,5 +8,5 @@ html(lang="en")
     title My rezume
     link(rel="stylesheet", href="/dist/app.css")
   body.page
-    include src/components/page/page
+    include ./components/page/page
     script(src="/dist/app.js")
