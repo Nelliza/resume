@@ -53,8 +53,13 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: 'pug-loader',
-        options: { pretty: true }
+        use: [
+          'raw-loader',
+          {
+            loader: 'pug-html-loader',
+            options: { pretty: true }
+          }
+        ]
       }
     ]
   },
@@ -68,7 +73,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/index.pug',
+      template: './src/pug/index.pug',
       filename: 'index.html'
     })
   ]
