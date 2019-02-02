@@ -60,7 +60,46 @@ module.exports = {
             options: { pretty: true }
           }
         ]
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img'
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 70
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts'
+        }
+      },
     ]
   },
   devServer: {
