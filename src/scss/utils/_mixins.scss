@@ -15,15 +15,20 @@
 
   @font-face {
     font-family: "Pt_sans";
-    src: url("/fonts/pt_sans-web-#{$name}-webfont.woff2") format("woff2"),
-         url("/fonts/pt_sans-web-#{$name}-webfont.woff") format("woff");
+    src: url("../fonts/pt_sans-web-#{$name}-webfont.woff2") format("woff2"),
+         url("../fonts/pt_sans-web-#{$name}-webfont.woff") format("woff");
     font-weight: $weight;
     font-style: $style;
   }
 }
 
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
 @mixin subtitle-icon-bg($name) {
-  background: url("/img/#{$name}-icon.png") no-repeat;
+  background: url("../components/#{$name}/#{$name}-icon.png") no-repeat;
   background-size: contain;
 }
 

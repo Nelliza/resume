@@ -21,10 +21,10 @@
 }
 .skills__dot {
   display: block;
-  width: 1rem;
-  height: 1rem;
   border-radius: 50%;
   background-color: $color-main;
+
+  @include size(1rem);
 }
 .skills__dot--gray {
   background-color: $color-dots;

@@ -2,14 +2,14 @@
   text-align: center;
 }
 .introduce__photo {
-  width: 11.13rem;
-  height: 11.13rem;
   margin: 3rem auto 0 auto;
   padding: .69rem;
   border: .89px solid $color-main;
   border-radius: 50%;
   background-color: $color-main;
   background-clip: content-box;
+
+  @include size(11.13rem);
 }
 .introduce__name {
   font-size: 2.88rem;
