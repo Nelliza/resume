@@ -1,7 +1,7 @@
 .skills__name {
-  font-size: 1.3rem;
-  margin-top: 1.1rem;
-  margin-bottom: .26rem;
+  font-size: 1.35rem;
+  margin-top: 1rem;
+  margin-bottom: .05rem;
   text-align: center;
   letter-spacing: .05rem;
   text-transform: uppercase;
@@ -10,21 +10,26 @@
   line-height: .7;
   margin: 0;
 
-  @media screen and (max-width: 948px) {
+  @media screen and (max-width: 960px) {
     padding-left: 0;
     text-align: center;
   }
 }
 .skills__level-item {
   display: inline-block;
-  margin-right: .25rem;
+  margin-top: .4rem;
+  margin-right: .37rem;
+
+  @media screen and (max-width: 960px) {
+    margin-right: .3rem;
+  }
 }
 .skills__dot {
   display: block;
   border-radius: 50%;
   background-color: $color-main;
 
-  @include size(1rem);
+  @include size(.9rem);
 }
 .skills__dot--gray {
   background-color: $color-dots;

@@ -7,7 +7,7 @@
   margin: 0;
   padding: 1.7rem 2.5rem;
 
-  @media screen and (max-width: 842px) {
+  @media screen and (max-width: 840px) {
     display: block;
   }
 }
@@ -16,8 +16,8 @@
   width: 37.3%;
   margin: 0 .8rem;
 
-  @media screen and (max-width: 842px) {
-    width: 80%;
+  @media screen and (max-width: 840px) {
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -27,13 +27,13 @@
 
   flex: 1;
 
-  @media screen and (max-width: 842px) {
-    width: 80%;
+  @media screen and (max-width: 840px) {
+    width: 90%;
     margin: 0 auto;
 
     flex: none;
   }
 }
 .page__item {
-  margin-top: 2.45rem;
+  margin-top: 2.2rem;
 }

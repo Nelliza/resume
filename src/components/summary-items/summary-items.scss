@@ -3,19 +3,23 @@
   margin-bottom: 2.85rem;
   padding-left: 3rem;
   list-style: none;
+
+  @media screen and (max-width: 396px) {
+    padding-left: 1rem;
+  }
 }
 .summary-items__item {
   position: relative;
 }
 .summary-items__item::before {
   position: absolute;
-  top: .2rem;
+  top: .4rem;
   left: -2.3rem;
   content: "";
   border-radius: 50%;
   background-color: #000;
 
-  @include size(1.2rem);
+  @include size(1.1rem);
 }
 .summary-items__header {
   font-size: 1.3rem;
@@ -28,8 +32,12 @@
   color: $color-main;
 }
 .summary-items__period {
-  @media screen and (max-width: 886px) and (min-width: 842px) {
+  @media screen and (max-width: 886px) and (min-width: 840px) {
     font-size: 1.1rem;
+  }
+  @media screen and (max-width: 633px) {
+    font-size: 1.1rem;
+    display: block;
   }
 }
 .summary-items__place {
@@ -39,5 +47,5 @@
 }
 .summary-items__description {
   margin-top: 0;
-  margin-bottom: .75rem;
+  margin-bottom: .65rem;
 }

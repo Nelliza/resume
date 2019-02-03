@@ -2,9 +2,9 @@ mixin subtitle(name)
   h2(class="subtitle subtitle--" + name)= name
 
 mixin contactList(description, value)
-  tr
-    td.contact__description= description
-    td.contact__value= value
+  .contact__row
+    span.contact__description= description
+    span.contact__value= value
 
 mixin skillsItem(name, countDot, countDotGray)
   .skills__item

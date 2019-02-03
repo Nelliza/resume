@@ -1,8 +1,10 @@
 .experience__list {
-  margin-top: 2.3rem;
+  margin-top: 2rem;
 }
-.experience__list .summary-items__degree {
-  font-weight: bold;
-  color: #000;
-  letter-spacing: .08rem;
+.experience__list {
+  .summary-items__degree {
+    font-weight: bold;
+    letter-spacing: .08rem;
+    color: #000;
+  }
 }

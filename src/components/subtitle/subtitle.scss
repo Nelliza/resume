@@ -3,21 +3,28 @@
   line-height: 2.05;
   display: flex;
   margin-bottom: 0;
-  text-align: left;
   letter-spacing: .2rem;
   text-transform: uppercase;
   color: $color-main;
 
   align-items: center;
+
+  @media screen and (max-width: 396px) {
+    justify-content: center;
+  }
 }
 .subtitle::before {
   margin-right: .5rem;
   content: "";
 
+  flex-shrink: 0;
   @include size(4.05rem);
+
+  @media screen and (max-width: 528px) {
+    content: none;
+  }
 }
 .subtitle::after {
-  margin-top: -.4rem;
   margin-right: .7rem;
   margin-left: .3rem;
   content: "";
@@ -26,9 +33,10 @@
   @include size(3.13rem, .25rem);
   flex-grow: 1;
   flex-shrink: 0;
-}
-.subtitle--profile {
-  padding-top: 1.75rem;
+
+  @media screen and (max-width: 396px) {
+    content: none;
+  }
 }
 
 @include subtitle-icon(profile);
