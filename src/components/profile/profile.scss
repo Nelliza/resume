@@ -1,8 +1,9 @@
 .profile__text {
   margin-top: .7rem;
   margin-right: .683rem;
-}
-.profile__text--bold {
-  line-height: 1;
-  letter-spacing: .031rem;
+
+  &--bold {
+    line-height: 1;
+    letter-spacing: .031rem;
+  }
 }

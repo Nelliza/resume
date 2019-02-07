@@ -30,7 +30,8 @@
   background-color: $color-main;
 
   @include size(.9rem);
-}
-.skills__dot--gray {
-  background-color: $color-dots;
+
+  &--gray {
+    background-color: $color-dots;
+  }
 }

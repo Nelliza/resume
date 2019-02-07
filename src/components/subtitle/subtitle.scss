@@ -12,30 +12,32 @@
   @media screen and (max-width: 396px) {
     justify-content: center;
   }
-}
-.subtitle::before {
-  margin-right: .5rem;
-  content: "";
 
-  flex-shrink: 0;
-  @include size(4.05rem);
+  &::before {
+    margin-right: .5rem;
+    content: "";
 
-  @media screen and (max-width: 528px) {
-    content: none;
+    flex-shrink: 0;
+    @include size(4.05rem);
+
+    @media screen and (max-width: 528px) {
+      content: none;
+    }
   }
-}
-.subtitle::after {
-  margin-right: .7rem;
-  margin-left: .3rem;
-  content: "";
-  background-color: $color-main;
 
-  @include size(3.13rem, .25rem);
-  flex-grow: 1;
-  flex-shrink: 0;
+  &::after {
+    margin-right: .7rem;
+    margin-left: .3rem;
+    content: "";
+    background-color: $color-main;
 
-  @media screen and (max-width: 396px) {
-    content: none;
+    @include size(3.13rem, .25rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 396px) {
+      content: none;
+    }
   }
 }
 
