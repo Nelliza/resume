@@ -11,7 +11,7 @@
 .summary-items__item {
   position: relative;
 }
-.summary-items__item::before {
+.summary-items__item:before {
   position: absolute;
   top: .4rem;
   left: -2.3rem;

@@ -29,7 +29,7 @@
 }
 
 @mixin subtitle-icon($name, $margin-right: 0) {
-  .subtitle--#{$name}::before {
+  .subtitle--#{$name}:before {
     @if $margin-right != 0 {
       margin-right: $margin-right;
     }
