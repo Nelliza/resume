@@ -6,14 +6,14 @@ mixin contactList(description, value)
     span.contact__description= description
     span.contact__value= value
 
-mixin skillsItem(name, countDot, countDotGray)
+mixin skillsItem(name, level)
   .skills__item
     h3.skills__name= name
     ul.skills__level
-      - for (var x = 0; x < countDot; x++)
+      - for (var x = 0; x < level; x++)
         li.skills__level-item
           span.skills__dot
-      - for (var x = 0; x < countDotGray; x++)
+      - for (var x = 0; x < (12 - level); x++)
         li.skills__level-item
           span.skills__dot.skills__dot--gray
 
