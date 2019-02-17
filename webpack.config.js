@@ -28,7 +28,7 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+            options: { sourceMap: true, config: { path: './src/js/postcss.config.js' } }
           },
           {
             loader: 'sass-loader',
@@ -47,19 +47,17 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+            options: { sourceMap: true, config: { path: './src/js/postcss.config.js' } }
           }
         ]
       },
       {
         test: /\.pug$/,
-        use: [
-          'raw-loader',
-          {
-            loader: 'pug-html-loader',
-            options: { pretty: true }
-          }
-        ]
+        loader: 'pug-loader',
+        options: {
+          pretty: true,
+          self: true
+        }
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
@@ -113,7 +111,12 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/pug/index.pug',
-      filename: 'index.html'
+      filename: 'index.html',
+
+      educationDegree: 'Master degree',
+      educationPlace: 'University name',
+      experienceDegree: 'Company name',
+      experiencePlace: 'Your job here'
     })
   ]
 }
