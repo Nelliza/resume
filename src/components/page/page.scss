@@ -10,30 +10,31 @@
   @media screen and (max-width: 840px) {
     display: block;
   }
-}
-.page__left-column {
-  box-sizing: border-box;
-  width: 37.3%;
-  margin: 0 .8rem;
 
-  @media screen and (max-width: 840px) {
-    width: 100%;
-    margin: 0 auto;
+  &__left-column {
+    box-sizing: border-box;
+    width: 37.3%;
+    margin: 0 .8rem;
+
+    @media screen and (max-width: 840px) {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
-}
-.page__right-column {
-  box-sizing: border-box;
-  margin-left: 2.5rem;
 
-  flex: 1;
+  &__right-column {
+    box-sizing: border-box;
+    margin-left: 2.5rem;
+    flex: 1;
 
-  @media screen and (max-width: 840px) {
-    width: 90%;
-    margin: 0 auto;
-
-    flex: none;
+    @media screen and (max-width: 840px) {
+      width: 90%;
+      margin: 0 auto;
+      flex: none;
+    }
   }
-}
-.page__item {
-  margin-top: 2.2rem;
+
+  &__item {
+    margin-top: 2.2rem;
+  }
 }

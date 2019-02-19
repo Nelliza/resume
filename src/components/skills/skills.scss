@@ -1,37 +1,41 @@
-.skills__name {
-  font-size: 1.35rem;
-  margin-top: 1rem;
-  margin-bottom: .05rem;
-  text-align: center;
-  letter-spacing: .05rem;
-  text-transform: uppercase;
-}
-.skills__level {
-  line-height: .7;
-  margin: 0;
-
-  @media screen and (max-width: 960px) {
-    padding-left: 0;
+.skills {
+  &__name {
+    font-size: 1.35rem;
+    margin-top: 1rem;
+    margin-bottom: .05rem;
     text-align: center;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
   }
-}
-.skills__level-item {
-  display: inline-block;
-  margin-top: .4rem;
-  margin-right: .37rem;
 
-  @media screen and (max-width: 960px) {
-    margin-right: .3rem;
+  &__level {
+    line-height: .7;
+    margin: 0;
+
+    @media screen and (max-width: 960px) {
+      padding-left: 0;
+      text-align: center;
+    }
   }
-}
-.skills__dot {
-  display: block;
-  border-radius: 50%;
-  background-color: $color-main;
 
-  @include size(.9rem);
+  &__level-item {
+    display: inline-block;
+    margin-top: .4rem;
+    margin-right: .37rem;
 
-  &--gray {
-    background-color: $color-dots;
+    @media screen and (max-width: 960px) {
+      margin-right: .3rem;
+    }
+  }
+
+  &__dot {
+    display: block;
+    border-radius: 50%;
+    background-color: $color-main;
+    @include size(.9rem);
+
+    &--gray {
+      background-color: $color-dots;
+    }
   }
 }

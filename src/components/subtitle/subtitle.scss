@@ -6,7 +6,6 @@
   letter-spacing: .2rem;
   text-transform: uppercase;
   color: $color-main;
-
   align-items: center;
 
   @media screen and (max-width: 396px) {
@@ -16,7 +15,6 @@
   &:before {
     margin-right: .5rem;
     content: "";
-
     flex-shrink: 0;
     @include size(4.05rem);
 
@@ -30,7 +28,6 @@
     margin-left: .3rem;
     content: "";
     background-color: $color-main;
-
     @include size(3.13rem, .25rem);
     flex-grow: 1;
     flex-shrink: 0;

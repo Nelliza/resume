@@ -1,29 +1,34 @@
-.contact__list {
-  font-size: 1.1rem;
-  display: table;
-  padding: .2rem 0;
-  border-spacing: 0;
+.contact {
+  &__list {
+    font-size: 1.1rem;
+    display: table;
+    padding: .2rem 0;
+    border-spacing: 0;
 
-  @media screen and (max-width: 840px) {
-    margin: 0 auto;
+    @media screen and (max-width: 840px) {
+      margin: 0 auto;
+    }
   }
-}
-.contact__row {
-  display: table-row;
-}
-.contact__description {
-  font-weight: bold;
-  display: table-cell;
-  width: 40%;
-  padding-top: 1.45rem;
-  padding-bottom: 0;
-  text-transform: uppercase;
-  color: $color-main;
 
-  @media screen and (max-width: 396px) {
-    padding-right: .2rem;
+  &__row {
+    display: table-row;
   }
-}
-.contact__value {
-  display: table-cell;
+
+  &__description {
+    font-weight: bold;
+    display: table-cell;
+    width: 40%;
+    padding-top: 1.45rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    color: $color-main;
+
+    @media screen and (max-width: 396px) {
+      padding-right: .2rem;
+    }
+  }
+
+  &__value {
+    display: table-cell;
+  }
 }
