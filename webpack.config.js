@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/main.js'
   },
   output: {
     filename: '[name].js',
@@ -28,7 +28,7 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './src/js/postcss.config.js' } }
+            options: { sourceMap: true, config: { path: './postcss.config.js' } }
           },
           {
             loader: 'sass-loader',
@@ -47,7 +47,7 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: './src/js/postcss.config.js' } }
+            options: { sourceMap: true, config: { path: './postcss.config.js' } }
           }
         ]
       },
@@ -110,13 +110,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/pug/index.pug',
-      filename: 'index.html',
-
-      educationDegree: 'Master degree',
-      educationPlace: 'University name',
-      experienceDegree: 'Company name',
-      experiencePlace: 'Your job here'
+      template: './src/index.pug',
+      filename: 'index.html'
     })
   ]
 }

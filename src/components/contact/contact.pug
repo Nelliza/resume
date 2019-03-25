@@ -1,8 +1,24 @@
+include ./_contact-list
+
 section.page__item.contact
   +subtitle("contact")
 
   .contact__list
-    +contactList("Address", "Main Street, City.")
-    +contactList("E-mail", "contact@domain.com")
-    +contactList("Phone", "555-555-555")
-    +contactList("Website", "www.yourweb.com")
+    +contactList([
+      {
+        name: "Address",
+        value: "Main Street, City."
+      },
+      {
+        name: "E-mail",
+        value: "contact@domain.com"
+      },
+      {
+        name: "Phone",
+        value: "555-555-555"
+      },
+      {
+        name: "Website",
+        value: "www.yourweb.com"
+      }
+    ])

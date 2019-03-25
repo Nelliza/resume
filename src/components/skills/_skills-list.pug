@@ -1,0 +1,11 @@
+mixin skillsList(items)
+  each item in items
+    .skills__item
+      h3.skills__name= item.name
+      ul.skills__level
+        - for (var i = 0; i < item.level; i++)
+          li.skills__level-item
+            span.skills__dot
+        - for (var i = 0; i < (12 - item.level); i++)
+          li.skills__level-item
+            span.skills__dot.skills__dot--gray

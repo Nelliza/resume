@@ -1,6 +1,9 @@
 section.page__item.education
-  +subtitle('education')
+  +subtitle("education")
 
   ul.education__list.summary-items
-    - for (var x = 0; x < 4; x++)
-      +summaryItem(self.htmlWebpackPlugin.options.educationDegree, self.htmlWebpackPlugin.options.educationPlace)
+    - for (var i = 0; i < 4; i++)
+      +summaryItem({
+        degree: "Master degree",
+        place: "University name"
+      })

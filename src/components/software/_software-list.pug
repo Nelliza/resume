@@ -1,0 +1,6 @@
+mixin softwareList(items)
+  each item in items
+    .software__item
+      h3.software__name= item.name
+      .software__level
+        span(style="width: " + item.level + "%")

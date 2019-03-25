@@ -1,6 +1,9 @@
 section.page__item.experience
-  +subtitle('experience')
+  +subtitle("experience")
 
   ul.experience__list.summary-items
-    - for (var x = 0; x < 3; x++)
-      +summaryItem(self.htmlWebpackPlugin.options.experienceDegree, self.htmlWebpackPlugin.options.experiencePlace)
+    - for (var i = 0; i < 3; i++)
+      +summaryItem({
+        degree: "Company name",
+        place: "Your job here"
+      })

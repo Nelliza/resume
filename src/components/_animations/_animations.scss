@@ -1,0 +1,12 @@
+@mixin animation($browser) {
+  -#{$browser}-animation: animate-stripes 3s linear infinite;
+}
+
+@mixin animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80px 0;
+  }
+}

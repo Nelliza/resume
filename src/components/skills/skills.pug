@@ -1,7 +1,23 @@
+include ./_skills-list
+
 section.page__item.skills
   +subtitle("skills")
 
-  +skillsItem("Creative", 9)
-  +skillsItem("Teamwork", 11)
-  +skillsItem("Innovate", 6)
-  +skillsItem("Communication", 11)
+  +skillsList([
+    {
+      name: "Creative",
+      level: 9
+    },
+    {
+      name: "Teamwork",
+      level: 11
+    },
+    {
+      name: "Innovate",
+      level: 6
+    },
+    {
+      name: "Communication",
+      level: 11
+    }
+  ])

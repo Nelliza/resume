@@ -1,0 +1,10 @@
+mixin summaryItem(options)
+  - options.period = options.period || "Feb 2011 - Jun 2014"
+  - options.description = options.description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+
+  li.summary-items__item
+    .summary-items__header
+      span.summary-items__degree= options.degree
+      span.summary-items__period // #{options.period}
+    span.summary-items__place= options.place
+    p.summary-items__description= options.description

@@ -1,10 +1,32 @@
+include ./_software-list
+
 section.page__item.software
-  +subtitle('software')
+  +subtitle("software")
 
   .software-flex
-    +softwareItem("Photoshop", 91)
-    +softwareItem("Illustrator", 70)
-    +softwareItem("Indesign", 56)
-    +softwareItem("Dreamweaver", 84)
-    +softwareItem("After effects", 62)
-    +softwareItem("HTML&CSS3", 91)
+    +softwareList([
+      {
+        name: "Photoshop",
+        level: 91
+      },
+      {
+        name: "Illustrator",
+        level: 70
+      },
+      {
+        name: "Indesign",
+        level: 56
+      },
+      {
+        name: "Dreamweaver",
+        level: 84
+      },
+      {
+        name: "After effects",
+        level: 62
+      },
+      {
+        name: "HTML&CSS3",
+        level: 91
+      }
+    ])

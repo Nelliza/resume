@@ -1,3 +1,15 @@
+@each $font-type in bold, italic, regular {
+  @include font-face(Pt_sans, pt_sans-web, $font-type);
+}
+
+@-webkit-keyframes animate-stripes {
+  @include animate-stripes;
+}
+
+@-moz-keyframes animate-stripes {
+  @include animate-stripes;
+}
+
 .page {
   font-family: "Pt_sans", "Open Sans", sans-serif;
   font-size: .81rem;
