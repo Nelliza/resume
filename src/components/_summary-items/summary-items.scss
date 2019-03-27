@@ -1,40 +1,44 @@
 .summary-items {
-  margin-top: 1.3rem;
-  margin-bottom: 2.85rem;
-  padding-left: 3rem;
+  margin: 2.3rem 0 2.85rem 5.2rem;
+  padding: 0;
   list-style: none;
 
   @media screen and (max-width: 396px) {
-    padding-left: 1rem;
+    margin-left: 2rem;
   }
 
   &__item {
     position: relative;
+    margin-bottom: .8rem;
 
     &:before {
+      @include size(1.9rem);
       position: absolute;
-      top: .4rem;
-      left: -2.3rem;
+      top: .7rem;
+      left: -4rem;
       content: "";
       border-radius: 50%;
       background-color: #000;
-      @include size(1.1rem);
     }
   }
 
-  &__header {
-    font-size: 1.3rem;
+  &__header,
+  &__place {
+    font-size: 2.3rem;
+    letter-spacing: .015rem;
   }
 
   &__degree {
     font-weight: bold;
-    margin-right: .8rem;
-    letter-spacing: 0.07rem;
+    margin-right: 1.3rem;
+    letter-spacing: .14rem;
     text-transform: uppercase;
     color: $color-main;
   }
 
   &__period {
+    letter-spacing: .02rem;
+
     @media screen and (max-width: 886px) and (min-width: 840px) {
       font-size: 1.1rem;
     }
@@ -45,13 +49,12 @@
   }
 
   &__place {
-    font-size: 1.3rem;
     line-height: 1.55;
     text-transform: uppercase;
   }
 
   &__description {
-    margin-top: 0;
-    margin-bottom: .65rem;
+    margin: .1rem .4rem 0 0;
+    line-height: 1.25;
   }
 }

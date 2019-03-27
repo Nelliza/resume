@@ -1,8 +1,8 @@
 .contact {
   &__list {
-    font-size: 1.1rem;
+    margin-top: .5rem;
+    font-size: 1.9rem;
     display: table;
-    padding: .2rem 0;
     border-spacing: 0;
 
     @media screen and (max-width: 840px) {
@@ -17,11 +17,11 @@
   &__description {
     font-weight: bold;
     display: table-cell;
-    width: 40%;
-    padding-top: 1.45rem;
-    padding-bottom: 0;
+    width: 41%;
+    padding-top: 2.6rem;
     text-transform: uppercase;
     color: $color-main;
+    letter-spacing: .07rem;
 
     @media screen and (max-width: 396px) {
       padding-right: .2rem;

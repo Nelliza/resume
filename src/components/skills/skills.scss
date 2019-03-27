@@ -1,16 +1,20 @@
 .skills {
+  &__list {
+    margin-top: 2rem;
+  }
+
   &__name {
-    font-size: 1.35rem;
-    margin-top: 1rem;
-    margin-bottom: .05rem;
+    font-size: 2.5rem;
+    margin-top: 1.55rem;
+    margin-bottom: .6rem;
     text-align: center;
-    letter-spacing: .05rem;
     text-transform: uppercase;
   }
 
   &__level {
     line-height: .7;
     margin: 0;
+    padding-left: 4.4rem;
 
     @media screen and (max-width: 960px) {
       padding-left: 0;
@@ -20,8 +24,7 @@
 
   &__level-item {
     display: inline-block;
-    margin-top: .4rem;
-    margin-right: .37rem;
+    margin-right: .46rem;
 
     @media screen and (max-width: 960px) {
       margin-right: .3rem;
@@ -32,7 +35,7 @@
     display: block;
     border-radius: 50%;
     background-color: $color-main;
-    @include size(.9rem);
+    @include size(1.8rem);
 
     &--gray {
       background-color: $color-dots;

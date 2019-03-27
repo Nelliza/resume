@@ -7,9 +7,9 @@ $color-gradient: rgba(255, 255, 255, .15);
 @import "./components/_linear-gradient/_linear-gradient.scss";
 @import "./components/_animations/_animations.scss";
 @import "./components/_summary-items/summary-items";
-@import "./components/_subtitle/subtitle";
 
 @import "./components/page/page";
+@import "./components/subtitle/subtitle";
 @import "./components/introduce/introduce";
 @import "./components/profile/profile";
 @import "./components/contact/contact";

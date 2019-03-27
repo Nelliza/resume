@@ -1,15 +1,15 @@
 .introduce {
-  margin-bottom: 4.1rem;
+  margin-bottom: 7.6rem;
   text-align: center;
 
   &__photo {
-    margin: 3rem auto 0 auto;
-    padding: .69rem;
-    border: .89px solid $color-main;
+    @include size(19.4rem);
+    margin: 1.3rem auto;
+    padding: 1.4rem;
+    border: .15rem solid $color-main;
     border-radius: 50%;
     background-color: $color-main;
     background-clip: content-box;
-    @include size(11.13rem);
 
     @media screen and (max-width: 396px) {
       @include size(11rem);
@@ -17,10 +17,10 @@
   }
 
   &__name {
-    font-size: 2.88rem;
+    font-size: 5.2rem;
     font-weight: normal;
-    line-height: .9;
-    margin-top: 2.15rem;
+    line-height: .85;
+    margin-top: 3.8rem;
     margin-bottom: 0;
     text-transform: uppercase;
 
@@ -30,9 +30,9 @@
   }
 
   &__surname {
-    font-size: 3rem;
+    font-size: 5.7rem;
     font-weight: bold;
-    line-height: .9;
+    line-height: .8;
     margin: 0;
     letter-spacing: .35rem;
     text-transform: uppercase;
@@ -43,10 +43,10 @@
   }
 
   &__profession {
-    font-size: 1.31rem;
+    font-size: 2.45rem;
     font-weight: bold;
-    line-height: 1;
-    margin-top: .8rem;
+    line-height: .8;
+    margin-top: 1.8rem;
     text-transform: uppercase;
   }
 }

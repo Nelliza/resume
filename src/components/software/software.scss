@@ -1,11 +1,11 @@
 .software-flex {
   display: flex;
-  height: 14.5rem;
-  margin-right: .8rem;
-  margin-left: .5rem;
-  flex-flow: column;
+  justify-content: space-between;
+  align-content: flex-start;
   flex-wrap: wrap;
-  align-content: space-between;
+  height: 28rem;
+  margin-left: .7rem;
+  margin-right: .3rem;
 
   @media screen and (max-width: 528px) {
     display: block;
@@ -14,7 +14,8 @@
 
 .software {
   &__item {
-    width: 44.5%;
+    flex-basis: 44.2%;
+    margin-bottom: .8rem;
 
     @media screen and (max-width: 528px) {
       width: 100%;
@@ -22,15 +23,15 @@
   }
 
   &__name {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     margin-top: 1.17rem;
-    margin-bottom: .6rem;
-    letter-spacing: .021rem;
+    margin-bottom: 1.05rem;
+    letter-spacing: .02rem;
     text-transform: uppercase;
   }
 
   &__level {
-    height: 1.2rem;
+    height: 2.1rem;
     background-color: $color-dots;
 
     span {

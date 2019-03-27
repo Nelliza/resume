@@ -10,43 +10,39 @@
   @include animate-stripes;
 }
 
+html {
+  width: 1920px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 840px) {
+    width: auto !important;
+    font-size: 10px;
+  }
+}
+
 .page {
   font-family: "Pt_sans", "Open Sans", sans-serif;
-  font-size: .81rem;
+  font-size: 1.5rem;
   display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
-  max-width: 1076.8px;
   margin: 0;
-  padding: 1.7rem 2.5rem;
+  padding: 7.2rem 5.6rem 7.2rem 5.9rem;
 
   @media screen and (max-width: 840px) {
     display: block;
-  }
-
-  &__left-column {
-    box-sizing: border-box;
-    width: 37.3%;
-    margin: 0 .8rem;
-
-    @media screen and (max-width: 840px) {
-      width: 100%;
-      margin: 0;
-    }
+    width: 100%;
   }
 
   &__right-column {
-    box-sizing: border-box;
-    margin-left: 2.5rem;
-    flex: 1;
+    margin-left: 5.8rem;
+    flex-shrink: .68;
 
     @media screen and (max-width: 840px) {
-      width: 100%;
       margin: 0;
-      flex: none;
     }
-  }
-
-  &__item {
-    margin-top: 2.2rem;
   }
 }
