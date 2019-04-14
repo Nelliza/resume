@@ -345,13 +345,8 @@ html {
 .skills__level {
   line-height: 0.7;
   margin: 0;
-  padding-left: 4.4rem;
-}
-@media screen and (max-width: 960px) {
-  .skills__level {
-    padding-left: 0;
-    text-align: center;
-  }
+  padding-left: 0;
+  text-align: center;
 }
 .skills__level-item {
   display: inline-block;
