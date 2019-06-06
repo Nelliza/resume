@@ -31,4 +31,14 @@
   &__value {
     display: table-cell;
   }
+
+  a.contact__value {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-main;
+    }
+  }
 }

@@ -2,4 +2,9 @@ mixin contactList(items)
   each item in items
     .contact__row
       span.contact__description= item.name
-      span.contact__value= item.value
+      if !item.attr
+        span.contact__value= item.value
+      else if item.attr == "link"
+        a.contact__value(href="http://" + item.value, target="_blank", rel="noopener noreferrer")= item.value
+      else
+        a.contact__value(href=item.attr + ": " + item.value, target="_blank", rel="noopener noreferrer")= item.value
