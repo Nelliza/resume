@@ -1,6 +1,6 @@
 @mixin subtitle-mod($name) {
   .subtitle--#{$name}:before {
-    background: url("./components/#{$name}/#{$name}-icon.png") no-repeat;
+    background: url('./components/#{$name}/#{$name}-icon.png') no-repeat;
     background-size: contain;
   }
 

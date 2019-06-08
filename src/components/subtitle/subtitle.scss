@@ -1,4 +1,4 @@
-@import "./_subtitle-mod.scss";
+@import './_subtitle-mod.scss';
 
 .subtitle {
   font-size: 3.8rem;
@@ -17,7 +17,7 @@
   &:before {
     @include size(7.1rem);
     margin-right: 1rem;
-    content: "";
+    content: '';
     flex-shrink: 0;
 
     @media screen and (max-width: 528px) {
@@ -29,7 +29,7 @@
     height: .5rem;
     margin-left: 1.4rem;
     margin-right: 1.4rem;
-    content: "";
+    content: '';
     background-color: $color-main;
     flex-grow: 1;
     flex-shrink: 0;
