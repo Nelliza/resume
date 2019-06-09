@@ -1,5 +1,9 @@
+include ../subtitle/_subtitle
+include ../qualifications/_qualification
+
 .page__left-column
-  include ../introduce/introduce
+  .page__introduce
+    include ../introduce/introduce
   include ../profile/profile
   include ../contact/contact
   include ../skills/skills
@@ -7,4 +11,5 @@
 .page__right-column
   include ../education/education
   include ../experience/experience
-  include ../software/software
+  .page__software
+    include ../software/software

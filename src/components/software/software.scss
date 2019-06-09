@@ -1,23 +1,22 @@
-.software-flex {
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  height: 28rem;
-  margin-left: .7rem;
-  margin-right: .3rem;
-
-  @media screen and (max-width: 528px) {
-    display: block;
-  }
-}
-
 .software {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 28rem;
+    margin: 1rem .3rem 0 .7rem;
+
+    @media screen and (max-width: 530px) {
+      display: block;
+    }
+  }
+
   &__item {
     flex-basis: 44.2%;
     margin-bottom: .8rem;
 
-    @media screen and (max-width: 528px) {
+    @media screen and (max-width: 530px) {
       width: 100%;
     }
   }

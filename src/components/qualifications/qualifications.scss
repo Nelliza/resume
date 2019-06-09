@@ -1,5 +1,4 @@
-.summary-items {
-  margin: 2.3rem 0 2.85rem 5.2rem;
+.qualifications {
   padding: 0;
   list-style: none;
 
@@ -9,7 +8,7 @@
 
   &__item {
     position: relative;
-    margin-bottom: .8rem;
+    margin-bottom: 1.1rem;
 
     &:before {
       @include size(1.9rem);
@@ -22,33 +21,42 @@
     }
   }
 
-  &__header,
-  &__place {
+  &__header {
     font-size: 2.3rem;
     letter-spacing: .015rem;
   }
 
   &__degree {
-    font-weight: bold;
     margin-right: 1.3rem;
+    font-weight: bold;
     letter-spacing: .14rem;
     text-transform: uppercase;
     color: $color-main;
+
+    &--experience {
+      font-weight: bold;
+      letter-spacing: .18rem;
+      color: #000;
+    }
   }
 
   &__period {
     letter-spacing: .02rem;
 
-    @media screen and (max-width: 886px) and (min-width: 840px) {
-      font-size: 1.1rem;
-    }
-    @media screen and (max-width: 633px) {
-      font-size: 1.1rem;
+    @media screen and (max-width: 600px) {
       display: block;
+      font-size: 1.7rem;
+    }
+
+    @media screen and (min-width: 840px) and (max-width: 960px) {
+      display: block;
+      font-size: 1.7rem;
     }
   }
 
   &__place {
+    font-size: 2.3rem;
+    letter-spacing: .015rem;
     line-height: 1.55;
     text-transform: uppercase;
   }

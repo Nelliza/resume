@@ -1,16 +1,13 @@
-@import './_subtitle-mod.scss';
-
 .subtitle {
+  margin: 0;
   font-size: 3.8rem;
   display: flex;
-  margin-top: 4rem;
-  margin-bottom: 0;
   letter-spacing: .2rem;
   text-transform: uppercase;
   color: $color-main;
   align-items: center;
 
-  @media screen and (max-width: 396px) {
+  @media screen and (max-width: 480px) {
     justify-content: center;
   }
 
@@ -19,52 +16,28 @@
     margin-right: 1rem;
     content: '';
     flex-shrink: 0;
-
-    @media screen and (max-width: 528px) {
-      content: none;
-    }
   }
 
   &:after {
     height: .5rem;
     margin-left: 1.4rem;
-    margin-right: 1.4rem;
     content: '';
     background-color: $color-main;
     flex-grow: 1;
     flex-shrink: 0;
 
-    @media screen and (max-width: 396px) {
+    @media screen and (max-width: 480px) {
       content: none;
     }
   }
 }
 
 @include subtitle-mod(profile);
-
 @include subtitle-mod(contact);
-
-@include subtitle-mod(skills) {
-  margin-top: 4.1rem;
-}
-
-@include subtitle-mod(education) {
-  margin-top: 0;
-
-  @media screen and (max-width: 840px) {
-    margin-top: 4.5rem;
-  }
-}
-
-@include subtitle-mod(experience) {
-  margin-top: 4.8rem;
-  margin-bottom: 4rem;
-}
-
-@include subtitle-mod(software) {
-  margin-top: 4.8rem;
-  margin-bottom: 1rem;
-}
+@include subtitle-mod(skills);
+@include subtitle-mod(education);
+@include subtitle-mod(experience);
+@include subtitle-mod(software);
 
 .page__right-column {
   .subtitle {

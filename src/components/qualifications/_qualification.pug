@@ -1,0 +1,11 @@
+mixin qualification(options)
+  - options.modifier = "qualifications__degree--" + options.modifier || false
+  - options.period = options.period || "Feb 2011 - Jun 2014"
+  - options.description = options.description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+
+  li.qualifications__item
+    .qualifications__header
+      span(class=["qualifications__degree", options.modifier])= options.degree
+      span.qualifications__period // #{options.period}
+    span.qualifications__place= options.place
+    p.qualifications__description= options.description

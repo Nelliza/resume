@@ -1,11 +1,13 @@
-.profile__text {
-  margin-top: 1.3rem;
-  margin-right: 1.3rem;
-  letter-spacing: -.023rem;
-  line-height: 1.2;
+.profile {
+  &__text {
+    margin-top: 1.3rem;
+    margin-bottom: 4.2rem;
+    letter-spacing: -.023rem;
+    line-height: 1.2;
 
-  &--bold {
-    line-height: .9;
-    letter-spacing: .03rem;
+    &--bold {
+      line-height: .9;
+      letter-spacing: .03rem;
+    }
   }
 }

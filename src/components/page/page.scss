@@ -28,12 +28,17 @@ html {
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0;
-  padding: 7.2rem 5.6rem 7.2rem 5.9rem;
+  padding: 7.1rem 5.6rem 7.2rem 5.9rem;
   font-size: 1.5rem;
 
   @media screen and (max-width: 840px) {
     display: block;
     width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   &__left-column {
@@ -43,11 +48,28 @@ html {
   }
 
   &__right-column {
-    margin-left: 5.8rem;
+    margin-left: 7.5rem;
     flex-shrink: .68;
+
+    @media screen and (max-width: 840px) {
+      margin-left: 0;
+    }
 
     @media screen and (max-width: 1200px) {
       flex-shrink: .5;
+    }
+  }
+
+  &__introduce {
+    margin-left: 1.8rem;
+    margin-bottom: 7.6rem;
+  }
+
+  &__qualifications {
+    margin: 2.3rem 0 4.85rem 5.2rem;
+
+    &--experience {
+      margin-top: 4rem;
     }
   }
 }

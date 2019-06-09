@@ -1,9 +1,10 @@
-section.page__item.education
+section.education
   +subtitle("education")
 
-  ul.education__list.summary-items
-    - for (var i = 0; i < 4; i++)
-      +summaryItem({
-        degree: "Master degree",
-        place: "University name"
-      })
+  .page__qualifications
+    ul.qualifications
+      - for (var i = 0; i < 4; i++)
+        +qualification({
+          degree: "Master degree",
+          place: "University name"
+        })
