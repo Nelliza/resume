@@ -1,19 +1,24 @@
 # Resume
 This site is published at https://nelliza.github.io/resume/
 
- ## Clone repository
+## Clone repository
 ```
 $ git clone https://github.com/Nelliza/resume.git
 ```
 
- ## Installation
+## Installation
 ```
 $ cd resume
 $ npm i
 $ npm run build
 ```
 
- ## Development
+## Development
 ```
 $ npm run dev
+```
+
+## Publication
+```
+$ npm run deploy
 ```
