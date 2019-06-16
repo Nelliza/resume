@@ -24,10 +24,20 @@
     text-transform: uppercase;
     color: $color-main;
     letter-spacing: .07rem;
+    word-break: break-all;
+
+    @media screen and (min-width: 1200px) {
+      word-break: normal;
+    }
   }
 
   &__value {
     display: table-cell;
+    word-break: break-all;
+
+    @media screen and (min-width: 1200px) {
+      word-break: normal;
+    }
   }
 
   a.contact__value {

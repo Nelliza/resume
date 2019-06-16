@@ -32,6 +32,7 @@
     letter-spacing: .14rem;
     text-transform: uppercase;
     color: $color-main;
+    word-break: break-all;
 
     &--experience {
       font-weight: bold;

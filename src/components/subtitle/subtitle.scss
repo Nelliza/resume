@@ -6,6 +6,7 @@
   text-transform: uppercase;
   color: $color-main;
   align-items: center;
+  word-break: break-all;
 
   @media screen and (max-width: 480px) {
     justify-content: center;
