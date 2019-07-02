@@ -1,3 +1,6 @@
+@import '../_font-face/_font-face';
+@import '../_animations/_animations';
+
 @each $font-type in bold, italic, regular {
   @include font-face(Pt_sans, pt_sans-web, $font-type);
 }
