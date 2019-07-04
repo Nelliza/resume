@@ -3,9 +3,9 @@ mixin skillsList(items)
     .skills__item
       h3.skills__name= item.name
       ul.skills__level
-        - for (var i = 0; i < item.level; i++)
+        - for (var i = 0; i < item.level; i += 1)
           li.skills__level-item
             span.skills__dot
-        - for (var i = 0; i < (12 - item.level); i++)
+        - for (var i = 0; i < (12 - item.level); i += 1)
           li.skills__level-item
             span.skills__dot.skills__dot--gray
