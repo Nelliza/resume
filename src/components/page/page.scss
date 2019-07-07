@@ -71,6 +71,10 @@ html {
   &__qualifications {
     margin: 2.3rem 0 4.85rem 5.2rem;
 
+    @media screen and (max-width: 380px) {
+      margin-left: 2rem;
+    }
+
     &--experience {
       margin-top: 4rem;
     }
