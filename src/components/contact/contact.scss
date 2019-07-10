@@ -41,14 +41,14 @@
       word-break: normal;
     }
   }
+}
 
-  a.contact__value {
-    text-decoration: none;
-    color: #000;
+a.contact__value {
+  text-decoration: none;
+  color: #000;
 
-    &:hover {
-      text-decoration: underline;
-      color: $color-main;
-    }
+  &:hover {
+    text-decoration: underline;
+    color: $color-main;
   }
 }
