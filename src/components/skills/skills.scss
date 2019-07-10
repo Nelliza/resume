@@ -45,7 +45,7 @@
     background-color: $color-main;
     @include size(1.8rem);
 
-    &--gray {
+    &_gray {
       background-color: $color-dots;
     }
   }
