@@ -1,3 +1,1 @@
-import main from './main';
-
-main();
+require('./components/**/*.scss');
