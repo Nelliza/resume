@@ -199,12 +199,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/font-face/font-face.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/introduce/introduce.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/introduce/introduce.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/font-face/font-face.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -265,11 +265,11 @@ module.exports = {
   "contact": {
     "contact": require("./..\\contact\\contact.scss")
   },
-  "font-face": {
-    "font-face": require("./..\\font-face\\font-face.scss")
-  },
   "introduce": {
     "introduce": require("./..\\introduce\\introduce.scss")
+  },
+  "font-face": {
+    "font-face": require("./..\\font-face\\font-face.scss")
   },
   "linear-gradient": {
     "linear-gradient": require("./..\\linear-gradient\\linear-gradient.scss")
@@ -299,7 +299,7 @@ module.exports = {
     "subtitle-icon": require("./..\\subtitle-icon\\subtitle-icon.scss")
   }
 };
-},{"./..\\animate-stripes\\animate-stripes.scss":"components/animate-stripes/animate-stripes.scss","./..\\colors\\colors.scss":"components/colors/colors.scss","./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\font-face\\font-face.scss":"components/font-face/font-face.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\linear-gradient\\linear-gradient.scss":"components/linear-gradient/linear-gradient.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\qualifications\\qualifications.scss":"components/qualifications/qualifications.scss","./..\\size\\size.scss":"components/size/size.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\subtitle-icon\\subtitle-icon.scss":"components/subtitle-icon/subtitle-icon.scss"}],"index.js":[function(require,module,exports) {
+},{"./..\\animate-stripes\\animate-stripes.scss":"components/animate-stripes/animate-stripes.scss","./..\\colors\\colors.scss":"components/colors/colors.scss","./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\font-face\\font-face.scss":"components/font-face/font-face.scss","./..\\linear-gradient\\linear-gradient.scss":"components/linear-gradient/linear-gradient.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\qualifications\\qualifications.scss":"components/qualifications/qualifications.scss","./..\\size\\size.scss":"components/size/size.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\subtitle-icon\\subtitle-icon.scss":"components/subtitle-icon/subtitle-icon.scss"}],"index.js":[function(require,module,exports) {
 require('./components/**/*.scss');
 },{"./components/**/*.scss":"components/**/*.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -329,7 +329,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4644" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4836" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
