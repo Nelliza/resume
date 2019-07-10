@@ -1,11 +1,11 @@
-mixin introduce(options={})
-  - options.photo = options.photo || "";
-  - options.name = options.name || "Name here";
-  - options.surname = options.surname || "Surname";
-  - options.profession = options.profession || "Graphic designer";
+mixin introduce({ photo, name, surname, profession } ={})
+  - photo = photo || "";
+  - name = name || "Name here";
+  - surname = surname || "Surname";
+  - profession = profession || "Graphic designer";
 
   section.introduce
-    .introduce__photo(style="background-image: url(" + options.photo + ")")
-    p.introduce__name= options.name
-    p.introduce__surname= options.surname
-    p.introduce__profession= options.profession
+    .introduce__photo(style="background-image: url(" + photo + ")")
+    p.introduce__name= name
+    p.introduce__surname= surname
+    p.introduce__profession= profession

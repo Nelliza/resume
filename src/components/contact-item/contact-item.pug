@@ -1,10 +1,12 @@
 mixin contact-item(items)
   each item in items
+    - var { name, value, attr } = item;
+
     .contact__row
-      span.contact__description= item.name
-      if !item.attr
-        span.contact__value= item.value
-      else if item.attr == "link"
-        a.contact__value(href="http://" + item.value, target="_blank", rel="noopener noreferrer")= item.value
+      span.contact__description= name
+      if !attr
+        span.contact__value= value
+      else if attr == "link"
+        a.contact__value(href="http://" + value, target="_blank", rel="noopener noreferrer")= value
       else
-        a.contact__value(href=item.attr + ": " + item.value, target="_blank", rel="noopener noreferrer")= item.value
+        a.contact__value(href=attr + ": " + value, target="_blank", rel="noopener noreferrer")= value

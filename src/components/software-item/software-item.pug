@@ -1,6 +1,8 @@
 mixin software-item(items)
   each item in items
+    - var { name, level } = item;
+
     .software__item
-      h3.software__name= item.name
+      h3.software__name= name
       .software__level
-        span(style="width: " + item.level + "%")
+        span(style="width: " + level + "%")
