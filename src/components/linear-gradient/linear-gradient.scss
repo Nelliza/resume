@@ -1,9 +1,5 @@
 @mixin linear-gradient($color, $percent, $deg: 135deg) {
   $color-stops: $color $percent, transparent $percent, transparent $percent*2, $color $percent*2, $color $percent*3, transparent $percent*3, transparent;
 
-  @include gradient-bg($deg, $color-stops);
-}
-
-@mixin gradient-bg($deg, $color-stops...) {
   background-image: linear-gradient($deg, $color-stops);
 }

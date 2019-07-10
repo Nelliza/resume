@@ -1,6 +1,6 @@
-@import './_subtitle-mod';
-@import '../_colors/_colors';
-@import '../_size/_size';
+@import '../subtitle-icon/subtitle-icon';
+@import '../colors/colors';
+@import '../size/size';
 
 .subtitle {
   margin: 0;
@@ -41,12 +41,12 @@
   }
 }
 
-@include subtitle-mod(profile);
-@include subtitle-mod(contact);
-@include subtitle-mod(skills);
-@include subtitle-mod(education);
-@include subtitle-mod(experience);
-@include subtitle-mod(software);
+@include subtitle-icon(profile);
+@include subtitle-icon(contact);
+@include subtitle-icon(skills);
+@include subtitle-icon(education);
+@include subtitle-icon(experience);
+@include subtitle-icon(software);
 
 .page__right-column {
   .subtitle {

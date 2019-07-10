@@ -1,9 +1,10 @@
-include ../subtitle/_subtitle
-include ../qualifications/_qualification
+include ../subtitle/subtitle
+include ../qualifications/qualifications
+include ../introduce/introduce
 
 .page__left-column
   .page__introduce
-    include ../introduce/introduce
+    +introduce()
   include ../profile/profile
   include ../contact/contact
   include ../skills/skills
