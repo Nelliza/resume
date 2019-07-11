@@ -1,27 +1,9 @@
+include ../subtitle/subtitle
 include ../contact-item/contact-item
 
-section.contact
-  +subtitle("contact")
+mixin contact(items)
+  section.contact
+    +subtitle("contact")
 
-  .contact__list
-    +contact-item([
-      {
-        name: "Address",
-        value: "Main Street, City."
-      },
-      {
-        name: "E-mail",
-        value: "contact@domain.com",
-        attr: "mailto"
-      },
-      {
-        name: "Phone",
-        value: "555-555-555",
-        attr: "tel"
-      },
-      {
-        name: "Website",
-        value: "www.yourweb.com",
-        attr: "link"
-      }
-    ])
+    .contact__list
+      +contact-item(items)

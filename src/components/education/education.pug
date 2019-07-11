@@ -1,10 +1,11 @@
-section.education
-  +subtitle("education")
+include ../subtitle/subtitle
+include ../qualifications/qualifications
 
-  .page__qualifications
-    ul.qualifications
-      - for (var i = 0; i < 4; i += 1)
-        +qualification({
-          degree: "Master degree",
-          place: "University name"
-        })
+mixin education({ modifier, period, description, degree, place })
+  section.education
+    +subtitle("education")
+
+    .page__qualifications
+      ul.qualifications
+        - for (var i = 0; i < 4; i += 1)
+          +qualifications({ modifier, period, description, degree, place })

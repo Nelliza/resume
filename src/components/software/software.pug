@@ -1,32 +1,9 @@
+include ../subtitle/subtitle
 include ../software-item/software-item
 
-section.software
-  +subtitle("software")
+mixin software(items)
+  section.software
+    +subtitle("software")
 
-  .software__list
-    +software-item([
-      {
-        name: "Photoshop",
-        level: 91
-      },
-      {
-        name: "Dreamweaver",
-        level: 84
-      },
-      {
-        name: "Illustrator",
-        level: 70
-      },
-      {
-        name: "After effects",
-        level: 62
-      },
-      {
-        name: "Indesign",
-        level: 56
-      },
-      {
-        name: "HTML&CSS3",
-        level: 91
-      }
-    ])
+    .software__list
+      +software-item(items)

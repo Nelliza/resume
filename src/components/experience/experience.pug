@@ -1,11 +1,11 @@
-section.experience
-  +subtitle("experience")
+include ../subtitle/subtitle
+include ../qualifications/qualifications
 
-  .page__qualifications.page__qualifications_type_experience
-    ul.qualifications
-      - for (var i = 0; i < 3; i += 1)
-        +qualification({
-          modifier: "experience",
-          degree: "Company name",
-          place: "Your job here"
-        })
+mixin experience({ modifier, period, description, degree, place })
+  section.experience
+    +subtitle("experience")
+
+    .page__qualifications.page__qualifications_type_experience
+      ul.qualifications
+        - for (var i = 0; i < 3; i += 1)
+          +qualifications({ modifier, period, description, degree, place })

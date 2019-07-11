@@ -1,24 +1,9 @@
+include ../subtitle/subtitle
 include ../skills-item/skills-item
 
-section.skills
-  +subtitle("skills")
+mixin skills(items)
+  section.skills
+    +subtitle("skills")
 
-  .skills__list
-    +skills-item([
-      {
-        name: "Creative",
-        level: 9
-      },
-      {
-        name: "Teamwork",
-        level: 11
-      },
-      {
-        name: "Innovate",
-        level: 6
-      },
-      {
-        name: "Communication",
-        level: 11
-      }
-    ])
+    .skills__list
+      +skills-item(items)
