@@ -1,11 +1,12 @@
 include ../subtitle/subtitle
-include ../qualifications/qualifications
+include ../qualifications-item/qualifications-item
 
 mixin education({ modifier, period, description, degree, place })
   section.education
     +subtitle("education")
 
     .page__qualifications
-      ul.qualifications
+      ul.education__qualifications
         - for (var i = 0; i < 4; i += 1)
-          +qualifications({ modifier, period, description, degree, place })
+          .education__qualification
+            +qualifications-item({ modifier, period, description, degree, place })

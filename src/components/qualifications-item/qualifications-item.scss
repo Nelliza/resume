@@ -1,27 +1,17 @@
 @import '../size/size';
 @import '../colors/colors';
 
-.qualifications {
-  padding: 0;
-  list-style: none;
+.qualifications-item {
+  position: relative;
 
-  @media screen and (max-width: 396px) {
-    margin-left: 2rem;
-  }
-
-  &__item {
-    position: relative;
-    margin-bottom: 1.1rem;
-
-    &:before {
-      @include size(1.9rem);
-      position: absolute;
-      top: .7rem;
-      left: -4rem;
-      content: '';
-      border-radius: 50%;
-      background-color: #000;
-    }
+  &:before {
+    @include size(1.9rem);
+    position: absolute;
+    top: .7rem;
+    left: -4rem;
+    content: '';
+    border-radius: 50%;
+    background-color: #000;
   }
 
   &__header {

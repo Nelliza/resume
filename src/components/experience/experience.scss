@@ -1,0 +1,14 @@
+.experience {
+  &__qualifications {
+    padding: 0;
+    list-style: none;
+
+    @media screen and (max-width: 396px) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__qualification {
+    margin-bottom: 1.1rem;
+  }
+}

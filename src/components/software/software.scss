@@ -1,6 +1,3 @@
-@import '../colors/colors';
-@import '../linear-gradient/linear-gradient';
-
 .software {
   &__list {
     display: flex;
@@ -8,45 +5,11 @@
     align-content: flex-start;
     flex-wrap: wrap;
     height: 28rem;
-    margin: 1rem .3rem 0 .7rem;
+    margin-left: .7rem;
+    margin-right: .3rem;
 
     @media screen and (max-width: 530px) {
       display: block;
-    }
-  }
-
-  &__item {
-    flex-basis: 44.2%;
-    margin-bottom: .8rem;
-
-    @media screen and (max-width: 530px) {
-      width: 100%;
-    }
-  }
-
-  &__name {
-    font-size: 2.5rem;
-    margin-top: 1.17rem;
-    margin-bottom: 1.05rem;
-    letter-spacing: .02rem;
-    text-transform: uppercase;
-    word-break: break-all;
-  }
-
-  &__level {
-    height: 2.1rem;
-    background-color: $color-dots;
-
-    span {
-      @include linear-gradient($color-gradient, 25%);
-      display: inline-block;
-      height: 100%;
-      transition: width .4s ease-in-out;
-      background-color: $color-main;
-      background-size: 40px 40px;
-
-      -webkit-animation: animate-stripes 3s linear infinite;
-      -moz-animation: animate-stripes 3s linear infinite;
     }
   }
 }

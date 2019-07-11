@@ -1,0 +1,11 @@
+mixin qualifications-item({ modifier, period, description, degree, place })
+  - modifier = `qualifications-item__degree_type_${modifier}` || false;
+  - period = period || "Feb 2011 - Jun 2014";
+  - description = description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
+
+  li.qualifications-item
+    .qualifications-item__header
+      span(class=["qualifications-item__degree", modifier])= degree
+      span.qualifications-item__period // #{period}
+    span.qualifications-item__place= place
+    p.qualifications-item__description= description

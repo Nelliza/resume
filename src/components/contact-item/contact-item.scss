@@ -1,0 +1,39 @@
+@import '../colors/colors.scss';
+
+.contact-item {
+  display: table-row;
+
+  &__description {
+    font-weight: bold;
+    display: table-cell;
+    width: 41%;
+    padding-top: 2.6rem;
+    text-transform: uppercase;
+    color: $color-main;
+    letter-spacing: .07rem;
+    word-break: break-all;
+
+    @media screen and (min-width: 1200px) {
+      word-break: normal;
+    }
+  }
+
+  &__value {
+    display: table-cell;
+    word-break: break-all;
+
+    @media screen and (min-width: 1200px) {
+      word-break: normal;
+    }
+  }
+}
+
+a.contact-item__value {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-main;
+  }
+}

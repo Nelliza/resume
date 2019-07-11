@@ -2,12 +2,12 @@ mixin skills-item(items)
   each item in items
     - var { name, level } = item;
 
-    .skills__item
-      h3.skills__name= name
-      ul.skills__level
+    .skills-item
+      h3.skills-item__name= name
+      ul.skills-item__level
         - for (var i = 0; i < level; i += 1)
-          li.skills__level-item
-            span.skills__dot
+          li.skills-item__level-item
+            span.skills-item__dot
         - for (var i = 0; i < (12 - level); i += 1)
-          li.skills__level-item
-            span.skills__dot.skills__dot_disabled
+          li.skills-item__level-item
+            span.skills-item__dot.skills-item__dot_disabled
