@@ -7,6 +7,6 @@ mixin contact-item(items)
       if !attr
         span.contact__value= value
       else if attr == "link"
-        a.contact__value(href="http://" + value, target="_blank", rel="noopener noreferrer")= value
+        a.contact__value(href=`http://${value}`, target="_blank", rel="noopener noreferrer")= value
       else
-        a.contact__value(href=attr + ": " + value, target="_blank", rel="noopener noreferrer")= value
+        a.contact__value(href=`${attr}: ${value}`, target="_blank", rel="noopener noreferrer")= value

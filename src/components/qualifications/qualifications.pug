@@ -1,5 +1,5 @@
 mixin qualification({ modifier, period, description, degree, place })
-  - modifier = "qualifications__degree_type_" + modifier || false;
+  - modifier = `qualifications__degree_type_${modifier}` || false;
   - period = period || "Feb 2011 - Jun 2014";
   - description = description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
 

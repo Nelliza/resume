@@ -5,7 +5,7 @@ mixin introduce({ photo, name, surname, profession } ={})
   - profession = profession || "Graphic designer";
 
   section.introduce
-    .introduce__photo(style="background-image: url(" + photo + ")")
+    .introduce__photo(style=`background-image: url(${photo})`)
     p.introduce__name= name
     p.introduce__surname= surname
     p.introduce__profession= profession
