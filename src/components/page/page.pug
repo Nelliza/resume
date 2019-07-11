@@ -6,84 +6,85 @@ include ../education/education
 include ../experience/experience
 include ../software/software
 
-.page__left-column
-  .page__introduce
-    +introduce()
-  +profile
-  +contact([
-    {
-      name: "Address",
-      value: "Main Street, City."
-    },
-    {
-      name: "E-mail",
-      value: "contact@domain.com",
-      attr: "mailto"
-    },
-    {
-      name: "Phone",
-      value: "555-555-555",
-      attr: "tel"
-    },
-    {
-      name: "Website",
-      value: "www.yourweb.com",
-      attr: "link"
-    }
-  ])
-  +skills([
-    {
-      name: "Creative",
-      level: 9
-    },
-    {
-      name: "Teamwork",
-      level: 11
-    },
-    {
-      name: "Innovate",
-      level: 6
-    },
-    {
-      name: "Communication",
-      level: 11
-    }
-  ])
-
-.page__right-column
-  +education({
-    degree: "Master degree",
-    place: "University name"
-  })
-  +experience({
-    modifier: "experience",
-    degree: "Company name",
-    place: "Your job here"
-  })
-  .page__software
-    +software([
+mixin page
+  .page__left-column
+    .page__introduce
+      +introduce()
+    +profile
+    +contact([
       {
-        name: "Photoshop",
-        level: 91
+        name: "Address",
+        value: "Main Street, City."
       },
       {
-        name: "Dreamweaver",
-        level: 84
+        name: "E-mail",
+        value: "contact@domain.com",
+        attr: "mailto"
       },
       {
-        name: "Illustrator",
-        level: 70
+        name: "Phone",
+        value: "555-555-555",
+        attr: "tel"
       },
       {
-        name: "After effects",
-        level: 62
-      },
-      {
-        name: "Indesign",
-        level: 56
-      },
-      {
-        name: "HTML&CSS3",
-        level: 91
+        name: "Website",
+        value: "www.yourweb.com",
+        attr: "link"
       }
     ])
+    +skills([
+      {
+        name: "Creative",
+        level: 9
+      },
+      {
+        name: "Teamwork",
+        level: 11
+      },
+      {
+        name: "Innovate",
+        level: 6
+      },
+      {
+        name: "Communication",
+        level: 11
+      }
+    ])
+
+  .page__right-column
+    +education({
+      degree: "Master degree",
+      place: "University name"
+    })
+    +experience({
+      modifier: "experience",
+      degree: "Company name",
+      place: "Your job here"
+    })
+    .page__software
+      +software([
+        {
+          name: "Photoshop",
+          level: 91
+        },
+        {
+          name: "Dreamweaver",
+          level: 84
+        },
+        {
+          name: "Illustrator",
+          level: 70
+        },
+        {
+          name: "After effects",
+          level: 62
+        },
+        {
+          name: "Indesign",
+          level: 56
+        },
+        {
+          name: "HTML&CSS3",
+          level: 91
+        }
+      ])
