@@ -236,7 +236,7 @@ html {
   }
 }
 .page__qualifications_type_experience {
-  margin-top: 4rem;
+  margin-top: 3.8rem;
 }
 .profile__text {
   margin-top: 1.3rem;
@@ -300,7 +300,8 @@ html {
   text-transform: uppercase;
 }
 .qualifications-item__description {
-  margin: 0.1rem 0.4rem 0 0;
+  margin-top: 0.15rem;
+  margin-bottom: 0;
   line-height: 1.25;
 }
 .skills__list {
