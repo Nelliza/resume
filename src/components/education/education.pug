@@ -1,12 +1,15 @@
 include ../subtitle/subtitle
 include ../qualifications-item/qualifications-item
 
-mixin education({ degree, place, modifier, description, period })
+mixin education({ modifier, items })
   section.education
     +subtitle("education")
 
     .page__qualifications
       ul.education__qualifications
-        - for (var i = 0; i < 4; i += 1)
+        each item in items
+          - var { description, degree="Master degree", place="University name", period="Feb 2011 - Jun 2014" } = item;
+          - description = description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
+
           .education__qualification
-            +qualifications-item({ degree, place, modifier, description, period })
+            +qualifications-item({ degree, place, description, period, modifier })

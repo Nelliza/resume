@@ -53,13 +53,11 @@ mixin page
 
   .page__right-column
     +education({
-      degree: "Master degree",
-      place: "University name"
+      items: [{}, {}, {}, {}]
     })
     +experience({
       modifier: "experience",
-      degree: "Company name",
-      place: "Your job here"
+      items: [{}, {}, {}]
     })
     .page__software
       +software([
