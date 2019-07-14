@@ -1,5 +1,5 @@
-@import '../colors/colors';
-@import '../linear-gradient/linear-gradient';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/mixins/linear-gradient.scss';
 
 .software-item {
   flex-basis: 44.2%;

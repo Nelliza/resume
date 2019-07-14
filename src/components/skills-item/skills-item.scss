@@ -1,5 +1,5 @@
-@import '../colors/colors';
-@import '../size/size';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/mixins/size.scss';
 
 .skills-item {
   &__name {

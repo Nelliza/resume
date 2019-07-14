@@ -1,5 +1,5 @@
-@import '../size/size';
-@import '../colors/colors';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/mixins/size.scss';
 
 .qualifications-item {
   position: relative;

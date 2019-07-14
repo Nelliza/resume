@@ -1,6 +1,6 @@
-@import '../subtitle-icon/subtitle-icon';
-@import '../colors/colors';
-@import '../size/size';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/mixins/size.scss';
+@import '../../styles/mixins/subtitle-icon.scss';
 
 .subtitle {
   margin: 0;

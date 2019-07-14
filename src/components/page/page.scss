@@ -1,5 +1,5 @@
-@import '../font-face/font-face';
-@import '../animate-stripes/animate-stripes';
+@import '../../styles/mixins/font-face.scss';
+@import '../../styles/mixins/animate-stripes.scss';
 
 @each $font-type in bold, italic, regular {
   @include font-face(Pt_sans, pt_sans-web, $font-type);
