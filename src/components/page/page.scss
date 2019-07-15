@@ -67,16 +67,4 @@ html {
     margin-left: 1.8rem;
     margin-bottom: 7.6rem;
   }
-
-  &__qualifications {
-    margin: 2.3rem 0 4.85rem 5.2rem;
-
-    @media screen and (max-width: 380px) {
-      margin-left: 2rem;
-    }
-
-    &_type_experience {
-      margin-top: 3.8rem;
-    }
-  }
 }

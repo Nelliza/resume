@@ -1,0 +1,9 @@
+mixin qualification({ degree, place, description, period, modifier })
+  - modifier = modifier ? `qualification__degree_type_${modifier}` : false;
+
+  li.qualification
+    .qualification__header
+      span(class=["qualification__degree", modifier])= degree
+      span.qualification__period // #{period}
+    span.qualification__place= place
+    p.qualification__description= description

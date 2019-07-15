@@ -1,9 +1,0 @@
-mixin qualifications-item({ degree, place, description, period, modifier })
-  - modifier = modifier ? `qualifications-item__degree_type_${modifier}` : false;
-
-  li.qualifications-item
-    .qualifications-item__header
-      span(class=["qualifications-item__degree", modifier])= degree
-      span.qualifications-item__period // #{period}
-    span.qualifications-item__place= place
-    p.qualifications-item__description= description

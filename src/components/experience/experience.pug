@@ -1,15 +1,15 @@
 include ../subtitle/subtitle
-include ../qualifications-item/qualifications-item
+include ../qualification/qualification
 
 mixin experience({ modifier, items })
   section.experience
     +subtitle("experience")
 
-    .page__qualifications.page__qualifications_type_experience
+    .experience__qualifications-wrapper
       ul.experience__qualifications
         each item in items
           - var { description, degree="Company name", place="Your job here", period="Feb 2011 - Jun 2014" } = item;
           - description = description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.";
 
-          .experience__qualification
-            +qualifications-item({ degree, place, description, period, modifier })
+          .experience__qualification-wrapper
+            +qualification({ degree, place, description, period, modifier })
