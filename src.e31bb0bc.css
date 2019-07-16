@@ -242,6 +242,16 @@ html {
   margin-left: 1.8rem;
   margin-bottom: 7.6rem;
 }
+.profile__text {
+  margin-top: 1.3rem;
+  margin-bottom: 4.2rem;
+  letter-spacing: -0.023rem;
+  line-height: 1.2;
+}
+.profile__text_style_bold {
+  line-height: 0.9;
+  letter-spacing: 0.03rem;
+}
 .qualification {
   position: relative;
 }
@@ -342,6 +352,20 @@ html {
 }
 .skills-item__dot_disabled {
   background-color: #e6e6e6;
+}
+.software__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 28rem;
+  margin-left: 0.7rem;
+  margin-right: 0.3rem;
+}
+@media screen and (max-width: 530px) {
+  .software__list {
+    display: block;
+  }
 }
 .software-item {
   flex-basis: 44.2%;
@@ -452,30 +476,6 @@ html {
 }
 .page__right-column .subtitle:after {
   margin-right: 0;
-}
-.software__list {
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  height: 28rem;
-  margin-left: 0.7rem;
-  margin-right: 0.3rem;
-}
-@media screen and (max-width: 530px) {
-  .software__list {
-    display: block;
-  }
-}
-.profile__text {
-  margin-top: 1.3rem;
-  margin-bottom: 4.2rem;
-  letter-spacing: -0.023rem;
-  line-height: 1.2;
-}
-.profile__text_style_bold {
-  line-height: 0.9;
-  letter-spacing: 0.03rem;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
