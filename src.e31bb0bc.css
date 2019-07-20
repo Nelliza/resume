@@ -46,26 +46,6 @@
   text-decoration: underline;
   color: #3d6cb0;
 }
-.education__qualifications-wrapper {
-  margin: 2.3rem 0 4.85rem 5.2rem;
-}
-@media screen and (max-width: 380px) {
-  .education__qualifications-wrapper {
-    margin-left: 2rem;
-  }
-}
-.education__qualifications {
-  padding: 0;
-  list-style: none;
-}
-@media screen and (max-width: 396px) {
-  .education__qualifications {
-    margin-left: 2rem;
-  }
-}
-.education__qualification-wrapper {
-  margin-bottom: 1.1rem;
-}
 .experience__qualifications-wrapper {
   margin: 3.8rem 0 4.85rem 5.2rem;
 }
@@ -151,6 +131,26 @@
   text-transform: uppercase;
   word-break: break-all;
 }
+.education__qualifications-wrapper {
+  margin: 2.3rem 0 4.85rem 5.2rem;
+}
+@media screen and (max-width: 380px) {
+  .education__qualifications-wrapper {
+    margin-left: 2rem;
+  }
+}
+.education__qualifications {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 396px) {
+  .education__qualifications {
+    margin-left: 2rem;
+  }
+}
+.education__qualification-wrapper {
+  margin-bottom: 1.1rem;
+}
 @font-face {
   font-family: Pt_sans;
   src: url("/pt_sans-web-bold-webfont.5e761a38.woff2") format("woff2"), url("/pt_sans-web-bold-webfont.d20c56a6.woff") format("woff");
@@ -199,18 +199,20 @@ html {
   }
 }
 
+body {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 .page {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0;
   padding: 7.1rem 5.6rem 7.2rem 5.9rem;
-  font-size: 1.5rem;
 }
 @media screen and (max-width: 840px) {
   .page {
     display: block;
-    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -312,47 +314,6 @@ html {
   margin-top: 2rem;
   margin-bottom: 4.8rem;
 }
-.skills-item__name {
-  font-size: 2.5rem;
-  margin-top: 1.55rem;
-  margin-bottom: 0.6rem;
-  text-align: center;
-  text-transform: uppercase;
-  word-break: break-all;
-}
-.skills-item__level {
-  line-height: 0.7;
-  margin: 0;
-  padding-left: 0;
-  text-align: center;
-}
-.skills-item__level-item {
-  display: inline-block;
-  margin-left: 0.45rem;
-  margin-right: 0.45rem;
-}
-@media screen and (min-width: 840px) and (max-width: 1080px) {
-  .skills-item__level-item {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .skills-item__level-item {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-  }
-}
-.skills-item__dot {
-  display: block;
-  border-radius: 50%;
-  background-color: #3d6cb0;
-  width: 1.8rem;
-  height: 1.8rem;
-}
-.skills-item__dot_disabled {
-  background-color: #e6e6e6;
-}
 .software__list {
   display: flex;
   justify-content: space-between;
@@ -366,36 +327,6 @@ html {
   .software__list {
     display: block;
   }
-}
-.software-item {
-  flex-basis: 44.2%;
-}
-@media screen and (max-width: 530px) {
-  .software-item {
-    width: 100%;
-  }
-}
-.software-item__name {
-  font-size: 2.5rem;
-  margin-top: 2.1rem;
-  margin-bottom: 1.05rem;
-  letter-spacing: 0.02rem;
-  text-transform: uppercase;
-  word-break: break-all;
-}
-.software-item__level {
-  height: 2.1rem;
-  background-color: #e6e6e6;
-}
-.software-item__level span {
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  display: inline-block;
-  height: 100%;
-  transition: width 0.4s ease-in-out;
-  background-color: #3d6cb0;
-  background-size: 40px 40px;
-  -webkit-animation: animate-stripes 3s linear infinite;
-  -moz-animation: animate-stripes 3s linear infinite;
 }
 .subtitle {
   margin: 0;
@@ -476,6 +407,77 @@ html {
 }
 .page__right-column .subtitle:after {
   margin-right: 0;
+}
+.skills-item__name {
+  font-size: 2.5rem;
+  margin-top: 1.55rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.skills-item__level {
+  line-height: 0.7;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.skills-item__level-item {
+  display: inline-block;
+  margin-left: 0.45rem;
+  margin-right: 0.45rem;
+}
+@media screen and (min-width: 840px) and (max-width: 1080px) {
+  .skills-item__level-item {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills-item__level-item {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+}
+.skills-item__dot {
+  display: block;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.skills-item__dot_disabled {
+  background-color: #e6e6e6;
+}
+.software-item {
+  flex-basis: 44.2%;
+}
+@media screen and (max-width: 530px) {
+  .software-item {
+    width: 100%;
+  }
+}
+.software-item__name {
+  font-size: 2.5rem;
+  margin-top: 2.1rem;
+  margin-bottom: 1.05rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.software-item__level {
+  height: 2.1rem;
+  background-color: #e6e6e6;
+}
+.software-item__level span {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  display: inline-block;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  background-color: #3d6cb0;
+  background-size: 40px 40px;
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
