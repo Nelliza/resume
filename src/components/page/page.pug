@@ -7,82 +7,83 @@ include ../experience/experience
 include ../software/software
 
 mixin page
-  .page__left-column
-    .page__introduce
-      +introduce()
-    +profile()
-    +contact([
-      {
-        name: "Address",
-        value: "Main Street, City."
-      },
-      {
-        name: "E-mail",
-        value: "contact@domain.com",
-        attr: "mailto"
-      },
-      {
-        name: "Phone",
-        value: "555-555-555",
-        attr: "tel"
-      },
-      {
-        name: "Website",
-        value: "www.yourweb.com",
-        attr: "link"
-      }
-    ])
-    +skills([
-      {
-        name: "Creative",
-        level: 9
-      },
-      {
-        name: "Teamwork",
-        level: 11
-      },
-      {
-        name: "Innovate",
-        level: 6
-      },
-      {
-        name: "Communication",
-        level: 11
-      }
-    ])
-
-  .page__right-column
-    +education({
-      items: [{}, {}, {}, {}]
-    })
-    +experience({
-      modifier: "experience",
-      items: [{}, {}, {}]
-    })
-    .page__software
-      +software([
+  .page
+    .page__left-column
+      .page__introduce
+        +introduce()
+      +profile()
+      +contact([
         {
-          name: "Photoshop",
-          level: 91
+          name: "Address",
+          value: "Main Street, City."
         },
         {
-          name: "Dreamweaver",
-          level: 84
+          name: "E-mail",
+          value: "contact@domain.com",
+          attr: "mailto"
         },
         {
-          name: "Illustrator",
-          level: 70
+          name: "Phone",
+          value: "555-555-555",
+          attr: "tel"
         },
         {
-          name: "After effects",
-          level: 62
-        },
-        {
-          name: "Indesign",
-          level: 56
-        },
-        {
-          name: "HTML&CSS3",
-          level: 91
+          name: "Website",
+          value: "www.yourweb.com",
+          attr: "link"
         }
       ])
+      +skills([
+        {
+          name: "Creative",
+          level: 9
+        },
+        {
+          name: "Teamwork",
+          level: 11
+        },
+        {
+          name: "Innovate",
+          level: 6
+        },
+        {
+          name: "Communication",
+          level: 11
+        }
+      ])
+
+    .page__right-column
+      +education({
+        items: [{}, {}, {}, {}]
+      })
+      +experience({
+        modifier: "experience",
+        items: [{}, {}, {}]
+      })
+      .page__software
+        +software([
+          {
+            name: "Photoshop",
+            level: 91
+          },
+          {
+            name: "Dreamweaver",
+            level: 84
+          },
+          {
+            name: "Illustrator",
+            level: 70
+          },
+          {
+            name: "After effects",
+            level: 62
+          },
+          {
+            name: "Indesign",
+            level: 56
+          },
+          {
+            name: "HTML&CSS3",
+            level: 91
+          }
+        ])
