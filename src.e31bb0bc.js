@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/contact-item/contact-item.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/education/education.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -204,7 +204,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/education/education.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/contact-item/contact-item.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/profile/profile.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -224,17 +229,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/profile/profile.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software/software.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills-item/skills-item.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -249,13 +244,18 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills-item/skills-item.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/**/*.scss":[function(require,module,exports) {
 module.exports = {
   "contact": {
     "contact": require("./..\\contact\\contact.scss")
   },
-  "contact-item": {
-    "contact-item": require("./..\\contact-item\\contact-item.scss")
+  "education": {
+    "education": require("./..\\education\\education.scss")
   },
   "experience": {
     "experience": require("./..\\experience\\experience.scss")
@@ -263,8 +263,11 @@ module.exports = {
   "introduce": {
     "introduce": require("./..\\introduce\\introduce.scss")
   },
-  "education": {
-    "education": require("./..\\education\\education.scss")
+  "contact-item": {
+    "contact-item": require("./..\\contact-item\\contact-item.scss")
+  },
+  "profile": {
+    "profile": require("./..\\profile\\profile.scss")
   },
   "page": {
     "page": require("./..\\page\\page.scss")
@@ -275,23 +278,20 @@ module.exports = {
   "skills": {
     "skills": require("./..\\skills\\skills.scss")
   },
-  "profile": {
-    "profile": require("./..\\profile\\profile.scss")
-  },
   "software": {
     "software": require("./..\\software\\software.scss")
-  },
-  "skills-item": {
-    "skills-item": require("./..\\skills-item\\skills-item.scss")
   },
   "subtitle": {
     "subtitle": require("./..\\subtitle\\subtitle.scss")
   },
   "software-item": {
     "software-item": require("./..\\software-item\\software-item.scss")
+  },
+  "skills-item": {
+    "skills-item": require("./..\\skills-item\\skills-item.scss")
   }
 };
-},{"./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\experience\\experience.scss":"components/experience/experience.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\education\\education.scss":"components/education/education.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\software-item\\software-item.scss":"components/software-item/software-item.scss"}],"index.js":[function(require,module,exports) {
+},{"./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\education\\education.scss":"components/education/education.scss","./..\\experience\\experience.scss":"components/experience/experience.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\software-item\\software-item.scss":"components/software-item/software-item.scss","./..\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss"}],"index.js":[function(require,module,exports) {
 require('./components/**/*.scss');
 },{"./components/**/*.scss":"components/**/*.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -321,7 +321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58828" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
