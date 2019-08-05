@@ -214,12 +214,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\fonts\\pt_sans-web-bold-webfont.woff2":[["pt_sans-web-bold-webfont.5e761a38.woff2","assets/fonts/pt_sans-web-bold-webfont.woff2"],"assets/fonts/pt_sans-web-bold-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-bold-webfont.woff":[["pt_sans-web-bold-webfont.d20c56a6.woff","assets/fonts/pt_sans-web-bold-webfont.woff"],"assets/fonts/pt_sans-web-bold-webfont.woff"],"./..\\..\\assets\\fonts\\pt_sans-web-italic-webfont.woff2":[["pt_sans-web-italic-webfont.bfb2f1fb.woff2","assets/fonts/pt_sans-web-italic-webfont.woff2"],"assets/fonts/pt_sans-web-italic-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-italic-webfont.woff":[["pt_sans-web-italic-webfont.1946a4e2.woff","assets/fonts/pt_sans-web-italic-webfont.woff"],"assets/fonts/pt_sans-web-italic-webfont.woff"],"./..\\..\\assets\\fonts\\pt_sans-web-regular-webfont.woff2":[["pt_sans-web-regular-webfont.e7cd3a89.woff2","assets/fonts/pt_sans-web-regular-webfont.woff2"],"assets/fonts/pt_sans-web-regular-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-regular-webfont.woff":[["pt_sans-web-regular-webfont.3bdce488.woff","assets/fonts/pt_sans-web-regular-webfont.woff"],"assets/fonts/pt_sans-web-regular-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/profile/profile.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/qualification/qualification.scss":[function(require,module,exports) {
+},{"./..\\..\\assets\\fonts\\pt_sans-web-bold-webfont.woff2":[["pt_sans-web-bold-webfont.5e761a38.woff2","assets/fonts/pt_sans-web-bold-webfont.woff2"],"assets/fonts/pt_sans-web-bold-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-bold-webfont.woff":[["pt_sans-web-bold-webfont.d20c56a6.woff","assets/fonts/pt_sans-web-bold-webfont.woff"],"assets/fonts/pt_sans-web-bold-webfont.woff"],"./..\\..\\assets\\fonts\\pt_sans-web-italic-webfont.woff2":[["pt_sans-web-italic-webfont.bfb2f1fb.woff2","assets/fonts/pt_sans-web-italic-webfont.woff2"],"assets/fonts/pt_sans-web-italic-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-italic-webfont.woff":[["pt_sans-web-italic-webfont.1946a4e2.woff","assets/fonts/pt_sans-web-italic-webfont.woff"],"assets/fonts/pt_sans-web-italic-webfont.woff"],"./..\\..\\assets\\fonts\\pt_sans-web-regular-webfont.woff2":[["pt_sans-web-regular-webfont.e7cd3a89.woff2","assets/fonts/pt_sans-web-regular-webfont.woff2"],"assets/fonts/pt_sans-web-regular-webfont.woff2"],"./..\\..\\assets\\fonts\\pt_sans-web-regular-webfont.woff":[["pt_sans-web-regular-webfont.3bdce488.woff","assets/fonts/pt_sans-web-regular-webfont.woff"],"assets/fonts/pt_sans-web-regular-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/qualification/qualification.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -229,7 +224,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/profile/profile.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software/software.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills-item/skills-item.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -239,12 +244,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\profile\\profile-icon.png":[["profile-icon.fd60970a.png","components/profile/profile-icon.png"],"components/profile/profile-icon.png"],"./..\\contact\\contact-icon.png":[["contact-icon.b71f8e31.png","components/contact/contact-icon.png"],"components/contact/contact-icon.png"],"./..\\skills\\skills-icon.png":[["skills-icon.80090557.png","components/skills/skills-icon.png"],"components/skills/skills-icon.png"],"./..\\education\\education-icon.png":[["education-icon.ae14cd64.png","components/education/education-icon.png"],"components/education/education-icon.png"],"./..\\experience\\experience-icon.png":[["experience-icon.360968ec.png","components/experience/experience-icon.png"],"components/experience/experience-icon.png"],"./..\\software\\software-icon.png":[["software-icon.45f88d09.png","components/software/software-icon.png"],"components/software/software-icon.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills-item/skills-item.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software-item/software-item.scss":[function(require,module,exports) {
+},{"./..\\profile\\profile-icon.png":[["profile-icon.fd60970a.png","components/profile/profile-icon.png"],"components/profile/profile-icon.png"],"./..\\contact\\contact-icon.png":[["contact-icon.b71f8e31.png","components/contact/contact-icon.png"],"components/contact/contact-icon.png"],"./..\\skills\\skills-icon.png":[["skills-icon.80090557.png","components/skills/skills-icon.png"],"components/skills/skills-icon.png"],"./..\\education\\education-icon.png":[["education-icon.ae14cd64.png","components/education/education-icon.png"],"components/education/education-icon.png"],"./..\\experience\\experience-icon.png":[["experience-icon.360968ec.png","components/experience/experience-icon.png"],"components/experience/experience-icon.png"],"./..\\software\\software-icon.png":[["software-icon.45f88d09.png","components/software/software-icon.png"],"components/software/software-icon.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software-item/software-item.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -269,29 +269,29 @@ module.exports = {
   "page": {
     "page": require("./..\\page\\page.scss")
   },
-  "profile": {
-    "profile": require("./..\\profile\\profile.scss")
-  },
   "qualification": {
     "qualification": require("./..\\qualification\\qualification.scss")
   },
   "skills": {
     "skills": require("./..\\skills\\skills.scss")
   },
+  "profile": {
+    "profile": require("./..\\profile\\profile.scss")
+  },
   "software": {
     "software": require("./..\\software\\software.scss")
   },
-  "subtitle": {
-    "subtitle": require("./..\\subtitle\\subtitle.scss")
-  },
   "skills-item": {
     "skills-item": require("./..\\skills-item\\skills-item.scss")
+  },
+  "subtitle": {
+    "subtitle": require("./..\\subtitle\\subtitle.scss")
   },
   "software-item": {
     "software-item": require("./..\\software-item\\software-item.scss")
   }
 };
-},{"./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\experience\\experience.scss":"components/experience/experience.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\education\\education.scss":"components/education/education.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss","./..\\software-item\\software-item.scss":"components/software-item/software-item.scss"}],"index.js":[function(require,module,exports) {
+},{"./..\\contact\\contact.scss":"components/contact/contact.scss","./..\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\experience\\experience.scss":"components/experience/experience.scss","./..\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\education\\education.scss":"components/education/education.scss","./..\\page\\page.scss":"components/page/page.scss","./..\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\skills\\skills.scss":"components/skills/skills.scss","./..\\profile\\profile.scss":"components/profile/profile.scss","./..\\software\\software.scss":"components/software/software.scss","./..\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss","./..\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\software-item\\software-item.scss":"components/software-item/software-item.scss"}],"index.js":[function(require,module,exports) {
 require('./components/**/*.scss');
 },{"./components/**/*.scss":"components/**/*.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -321,7 +321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54253" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
