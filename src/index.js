@@ -1,1 +1,2 @@
-require('./components/**/*.scss');
+require('./**/*.scss');
+require('./styles/*.scss');

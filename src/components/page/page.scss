@@ -1,36 +1,3 @@
-@import '../../styles/mixins/font-face';
-@import '../../styles/mixins/animate-stripes';
-
-@each $font-type in bold, italic, regular {
-  @include font-face(Pt_sans, pt_sans-web, $font-type);
-}
-
-@-webkit-keyframes animate-stripes {
-  @include animate-stripes;
-}
-
-@-moz-keyframes animate-stripes {
-  @include animate-stripes;
-}
-
-html {
-  max-width: 1920px;
-  margin: auto;
-  font-family: 'Pt_sans', 'Arial', sans-serif;
-  font-size: 16px;
-  color: #000;
-  background-color: #fff;
-
-  @media screen and (max-width: 1600px) {
-    font-size: 10px;
-  }
-}
-
-body {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
 .page {
   display: flex;
   justify-content: space-between;
