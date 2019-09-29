@@ -10,6 +10,7 @@
 
   &__name {
     font-size: 2.5rem;
+    font-weight: 400;
     margin-top: 2.1rem;
     margin-bottom: 1.05rem;
     letter-spacing: .02rem;
@@ -20,17 +21,15 @@
   &__level {
     height: 2.1rem;
     background-color: $color-dots;
+  }
 
-    span {
-      @include linear-gradient($color-gradient, 25%);
-      display: inline-block;
-      height: 100%;
-      transition: width .4s ease-in-out;
-      background-color: $color-main;
-      background-size: 40px 40px;
-
-      -webkit-animation: animate-stripes 3s linear infinite;
-      -moz-animation: animate-stripes 3s linear infinite;
-    }
+  &__completed-level {
+    @include linear-gradient($color-gradient, 25%);
+    display: inline-block;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: $color-main;
+    background-size: 40px 40px;
+    animation: animate-stripes 3s linear infinite;
   }
 }

@@ -5,4 +5,4 @@ mixin software-item(items)
     .software-item
       h3.software-item__name= name
       .software-item__level
-        span(style=`width: ${level}%`)
+        span.software-item__completed-level(style=`width: ${level}%`)
