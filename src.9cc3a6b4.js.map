@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["require"],"mappings":";;;;;;;;;;;AAAAA,QAAQ,eACRA,QAAQ","file":"src.9cc3a6b4.js","sourceRoot":"..\\src","sourcesContent":["require('./**/*.scss');\r\nrequire('./styles/*.scss');\r\n"]}
