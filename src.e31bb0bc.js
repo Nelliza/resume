@@ -194,16 +194,6 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/contact-item/contact-item.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/education/education.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/experience/experience.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -214,7 +204,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/page/page.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/contact-item/contact-item.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -224,12 +214,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/page/page.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/qualification/qualification.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills/skills.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/education/education.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -239,7 +234,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software/software.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/skills/skills.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -249,17 +244,27 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/subtitle/subtitle.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\images\\profile-icon.png":[["profile-icon.9a98c4f0.png","assets/images/profile-icon.png"],"assets/images/profile-icon.png"],"./..\\..\\assets\\images\\contact-icon.png":[["contact-icon.31853a68.png","assets/images/contact-icon.png"],"assets/images/contact-icon.png"],"./..\\..\\assets\\images\\skills-icon.png":[["skills-icon.7434add4.png","assets/images/skills-icon.png"],"assets/images/skills-icon.png"],"./..\\..\\assets\\images\\education-icon.png":[["education-icon.c820601d.png","assets/images/education-icon.png"],"assets/images/education-icon.png"],"./..\\..\\assets\\images\\experience-icon.png":[["experience-icon.5c9bd44f.png","assets/images/experience-icon.png"],"assets/images/experience-icon.png"],"./..\\..\\assets\\images\\software-icon.png":[["software-icon.273ff23b.png","assets/images/software-icon.png"],"assets/images/software-icon.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/mixins/animate-stripes.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/mixins/animate-stripes.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/mixins/font-face.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/software/software.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/subtitle/subtitle.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./images\\profile-icon.png":[["profile-icon.e61ee65b.png","components/subtitle/images/profile-icon.png"],"components/subtitle/images/profile-icon.png"],"./images\\contact-icon.png":[["contact-icon.c64b5c0f.png","components/subtitle/images/contact-icon.png"],"components/subtitle/images/contact-icon.png"],"./images\\skills-icon.png":[["skills-icon.fa220f54.png","components/subtitle/images/skills-icon.png"],"components/subtitle/images/skills-icon.png"],"./images\\education-icon.png":[["education-icon.d1c784c5.png","components/subtitle/images/education-icon.png"],"components/subtitle/images/education-icon.png"],"./images\\experience-icon.png":[["experience-icon.813d18dd.png","components/subtitle/images/experience-icon.png"],"components/subtitle/images/experience-icon.png"],"./images\\software-icon.png":[["software-icon.9994a5d8.png","components/subtitle/images/software-icon.png"],"components/subtitle/images/software-icon.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/variables/colors.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -274,16 +279,6 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/mixins/subtitle-icon.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/variables/colors.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"**/*.scss":[function(require,module,exports) {
 module.exports = {
   "styles": {
@@ -292,8 +287,7 @@ module.exports = {
       "animate-stripes": require("./..\\styles\\mixins\\animate-stripes.scss"),
       "font-face": require("./..\\styles\\mixins\\font-face.scss"),
       "linear-gradient": require("./..\\styles\\mixins\\linear-gradient.scss"),
-      "size": require("./..\\styles\\mixins\\size.scss"),
-      "subtitle-icon": require("./..\\styles\\mixins\\subtitle-icon.scss")
+      "size": require("./..\\styles\\mixins\\size.scss")
     },
     "variables": {
       "colors": require("./..\\styles\\variables\\colors.scss")
@@ -303,45 +297,45 @@ module.exports = {
     "contact": {
       "contact": require("./..\\components\\contact\\contact.scss")
     },
-    "contact-item": {
-      "contact-item": require("./..\\components\\contact-item\\contact-item.scss")
-    },
-    "education": {
-      "education": require("./..\\components\\education\\education.scss")
-    },
     "experience": {
       "experience": require("./..\\components\\experience\\experience.scss")
     },
     "introduce": {
       "introduce": require("./..\\components\\introduce\\introduce.scss")
     },
-    "page": {
-      "page": require("./..\\components\\page\\page.scss")
+    "contact-item": {
+      "contact-item": require("./..\\components\\contact-item\\contact-item.scss")
     },
     "profile": {
       "profile": require("./..\\components\\profile\\profile.scss")
     },
+    "page": {
+      "page": require("./..\\components\\page\\page.scss")
+    },
     "qualification": {
       "qualification": require("./..\\components\\qualification\\qualification.scss")
     },
-    "skills": {
-      "skills": require("./..\\components\\skills\\skills.scss")
+    "education": {
+      "education": require("./..\\components\\education\\education.scss")
     },
     "skills-item": {
       "skills-item": require("./..\\components\\skills-item\\skills-item.scss")
     },
-    "software": {
-      "software": require("./..\\components\\software\\software.scss")
+    "skills": {
+      "skills": require("./..\\components\\skills\\skills.scss")
     },
     "software-item": {
       "software-item": require("./..\\components\\software-item\\software-item.scss")
+    },
+    "software": {
+      "software": require("./..\\components\\software\\software.scss")
     },
     "subtitle": {
       "subtitle": require("./..\\components\\subtitle\\subtitle.scss")
     }
   }
 };
-},{"./..\\styles\\common.scss":"styles/common.scss","./..\\components\\contact\\contact.scss":"components/contact/contact.scss","./..\\components\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\components\\education\\education.scss":"components/education/education.scss","./..\\components\\experience\\experience.scss":"components/experience/experience.scss","./..\\components\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\components\\page\\page.scss":"components/page/page.scss","./..\\components\\profile\\profile.scss":"components/profile/profile.scss","./..\\components\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\components\\skills\\skills.scss":"components/skills/skills.scss","./..\\components\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss","./..\\components\\software\\software.scss":"components/software/software.scss","./..\\components\\software-item\\software-item.scss":"components/software-item/software-item.scss","./..\\components\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\styles\\mixins\\animate-stripes.scss":"styles/mixins/animate-stripes.scss","./..\\styles\\mixins\\font-face.scss":"styles/mixins/font-face.scss","./..\\styles\\mixins\\linear-gradient.scss":"styles/mixins/linear-gradient.scss","./..\\styles\\mixins\\size.scss":"styles/mixins/size.scss","./..\\styles\\mixins\\subtitle-icon.scss":"styles/mixins/subtitle-icon.scss","./..\\styles\\variables\\colors.scss":"styles/variables/colors.scss"}],"index.js":[function(require,module,exports) {
+},{"./..\\styles\\common.scss":"styles/common.scss","./..\\components\\contact\\contact.scss":"components/contact/contact.scss","./..\\components\\experience\\experience.scss":"components/experience/experience.scss","./..\\components\\introduce\\introduce.scss":"components/introduce/introduce.scss","./..\\components\\contact-item\\contact-item.scss":"components/contact-item/contact-item.scss","./..\\components\\profile\\profile.scss":"components/profile/profile.scss","./..\\components\\page\\page.scss":"components/page/page.scss","./..\\components\\qualification\\qualification.scss":"components/qualification/qualification.scss","./..\\components\\education\\education.scss":"components/education/education.scss","./..\\components\\skills-item\\skills-item.scss":"components/skills-item/skills-item.scss","./..\\components\\skills\\skills.scss":"components/skills/skills.scss","./..\\components\\software-item\\software-item.scss":"components/software-item/software-item.scss","./..\\styles\\mixins\\animate-stripes.scss":"styles/mixins/animate-stripes.scss","./..\\styles\\mixins\\font-face.scss":"styles/mixins/font-face.scss","./..\\components\\software\\software.scss":"components/software/software.scss","./..\\components\\subtitle\\subtitle.scss":"components/subtitle/subtitle.scss","./..\\styles\\variables\\colors.scss":"styles/variables/colors.scss","./..\\styles\\mixins\\linear-gradient.scss":"styles/mixins/linear-gradient.scss","./..\\styles\\mixins\\size.scss":"styles/mixins/size.scss"}],"index.js":[function(require,module,exports) {
 require('./**/*.scss');
 },{"./**/*.scss":"**/*.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -371,7 +365,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38592" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64670" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
