@@ -1,6 +1,0 @@
-@mixin subtitle-icon($name) {
-  .subtitle_type_#{$name}:before {
-    background: url(../../assets/images/#{$name}-icon.png) no-repeat;
-    background-size: contain;
-  }
-}

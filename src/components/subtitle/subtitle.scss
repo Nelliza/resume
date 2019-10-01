@@ -1,6 +1,5 @@
 @import '../../styles/variables/colors';
 @import '../../styles/mixins/size';
-@import '../../styles/mixins/subtitle-icon';
 
 .subtitle {
   margin: 0;
@@ -16,11 +15,38 @@
     justify-content: center;
   }
 
+  &_type {
+    &_profile:before {
+      background: url(./images/profile-icon.png) no-repeat;
+    }
+
+    &_contact:before {
+      background: url(./images/contact-icon.png) no-repeat;
+    }
+
+    &_skills:before {
+      background: url(./images/skills-icon.png) no-repeat;
+    }
+
+    &_education:before {
+      background: url(./images/education-icon.png) no-repeat;
+    }
+
+    &_experience:before {
+      background: url(./images/experience-icon.png) no-repeat;
+    }
+
+    &_software:before {
+      background: url(./images/software-icon.png) no-repeat;
+    }
+  }
+
   &:before {
     @include size(7.1rem);
     margin-right: 1rem;
     content: '';
     flex-shrink: 0;
+    background-size: contain;
 
     @media screen and (max-width: 380px) {
       display: none;
@@ -40,13 +66,6 @@
     }
   }
 }
-
-@include subtitle-icon(profile);
-@include subtitle-icon(contact);
-@include subtitle-icon(skills);
-@include subtitle-icon(education);
-@include subtitle-icon(experience);
-@include subtitle-icon(software);
 
 .page__right-column {
   .subtitle {
