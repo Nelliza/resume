@@ -1,6 +1,6 @@
 mixin skills-item(items)
   each item in items
-    - var { name, level } = item;
+    - var { name, level, maxLevel=12 } = item;
 
     .skills-item
       h3.skills-item__name= name
@@ -8,6 +8,6 @@ mixin skills-item(items)
         - for (var i = 0; i < level; i += 1)
           li.skills-item__level-item
             span.skills-item__dot
-        - for (var i = 0; i < (12 - level); i += 1)
+        - for (var i = 0; i < (maxLevel - level); i += 1)
           li.skills-item__level-item
             span.skills-item__dot.skills-item__dot_disabled
