@@ -1,18 +1,20 @@
-@mixin font-face($font-family, $font, $type) {
+@mixin font-face($font, $type) {
   $weight: 400;
   $style: normal;
 
-  @if $type == bold {
+  @if $type == Bold {
     $weight: 700;
   }
-  @else if $type == italic {
+  @else if $type == Italic {
     $style: italic;
   }
 
   @font-face {
-    font-family: $font-family;
-    src: url('../assets/fonts/#{$font}-#{$type}-webfont.woff2') format('woff2'),
-         url('../assets/fonts/#{$font}-#{$type}-webfont.woff') format('woff');
+    font-family: $font;
+    src: url('../assets/fonts/#{$font}-#{$type}.woff2') format('woff2'),
+         url('../assets/fonts/#{$font}-#{$type}.woff') format('woff'),
+         url('../assets/fonts/#{$font}-#{$type}.ttf') format('ttf'),
+         url('../assets/fonts/#{$font}-#{$type}.svg') format('svg');
     font-weight: $weight;
     font-style: $style;
   }
